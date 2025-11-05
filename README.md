@@ -5,12 +5,12 @@ Monorepo for HanaCare Super App with Scrum-based team collaboration structure, b
 ## Tech Stack
 
 - **Runtime**: Bun 1.3.1+
-- **Web App**: Next.js 15+ (TypeScript, Tailwind CSS)
-- **Mobile App**: React Native CLI (TypeScript)
-- **Backend API**: Elysia.js (Bun runtime)
-- **Database & Auth**: Supabase
+- **Web App**: Next.js 15.1.5+ (TypeScript, Tailwind CSS, React 19)
+- **Mobile App**: React Native CLI 0.76.5 (TypeScript, React 18.3.1)
+- **Backend API**: Elysia.js 1.1.23 (Bun runtime)
+- **Database & Auth**: Supabase (v2.47.10)
 - **Deployment**: Vercel (Web), Railway (Backend)
-- **Code Quality**: Biome.js (replaces ESLint/Prettier)
+- **Code Quality**: Biome.js 1.9.4 (replaces ESLint/Prettier)
 - **Monorepo**: Bun Workspaces
 
 ## Project Structure
@@ -67,9 +67,14 @@ hanacare-monorepo/
 
 - Bun 1.3.1+ installed ([Install Bun](https://bun.sh/))
 - Node.js 18+ (for React Native CLI)
-- Supabase account
+- Supabase account and project
 - Vercel account (for web deployment)
 - Railway account (for backend deployment)
+- **For Mobile Development:**
+  - Xcode 15+ (macOS only, for iOS development)
+  - Android Studio (for Android development)
+  - CocoaPods: `sudo gem install cocoapods` (for iOS)
+  - Java Development Kit (JDK) for Android
 
 ### Setup
 
@@ -86,8 +91,11 @@ hanacare-monorepo/
 
 3. **Configure environment variables**
    ```bash
-   cp .env.example .env
-   # Edit .env with your Supabase credentials
+   # Create .env files in each app/service directory as needed
+   # apps/web/.env.local - Next.js environment variables
+   # services/api/.env - API environment variables
+   # apps/mobile/.env - Mobile app environment variables
+   # Add your Supabase credentials and other required variables
    ```
 
 4. **Start development servers**
@@ -132,16 +140,23 @@ hanacare-monorepo/
 - Use `@hanacare/shared` package for shared types, utils, and constants
 - Import: `import { User, formatDate } from '@hanacare/shared'`
 - Keep shared code framework-agnostic when possible
+- Shared package structure:
+  - `packages/shared/src/types/` - TypeScript types
+  - `packages/shared/src/utils/` - Utility functions
+  - `packages/shared/src/constants/` - Constants
 
 ### Backend Development
 - Elysia.js routes in `services/api/src/routes/`
-- Use OpenAPI decorators for API documentation
+- Use OpenAPI decorators (`@elysiajs/openapi`) for API documentation
 - Supabase client in `services/api/src/lib/supabase.ts`
+- CORS enabled via `@elysiajs/cors`
 
 ### Mobile Development
-- React Native CLI setup (not Expo)
+- React Native CLI 0.76.5 setup (not Expo)
 - Native modules configured in `apps/mobile/ios/` and `apps/mobile/android/`
 - Run `bun run dev:mobile` to start Metro bundler
+- Use `bun run start:clean` to clear Metro cache and restart
+- See `docs/MOBILE_SETUP.md` for detailed setup instructions
 
 ## Cursor AI Integration
 
@@ -155,34 +170,43 @@ This repo uses Cursor AI with Scrum collaboration rules. Reference `@rules scrum
 
 ### Web App (Vercel)
 1. Connect repository to Vercel
-2. Configure build settings in `infra/vercel.json`
+2. Build settings are configured in `infra/vercel.json`:
+   - Build command: `cd apps/web && bun run build`
+   - Output directory: `apps/web/.next`
+   - Install command: `bun install`
 3. Deploy automatically on push to main branch
 
 ### Backend API (Railway)
 1. Connect repository to Railway
-2. Configure environment variables
-3. Set start command: `bun run start`
+2. Build settings are configured in `infra/railway.json`:
+   - Build command: `cd services/api && bun install && bun run build`
+   - Start command: `cd services/api && bun run start`
+3. Configure environment variables in Railway dashboard
 4. Deploy automatically on push to main branch
 
 ### Mobile App
 - Build iOS: `cd apps/mobile && bun run ios`
 - Build Android: `cd apps/mobile && bun run android`
+- Clear Metro cache: `cd apps/mobile && bun run start:clean`
 - Use Fastlane for CI/CD (optional)
+- See `docs/MOBILE_SETUP.md` for initial setup
+- See `docs/ANDROID_SETUP.md` for Android-specific setup
 
 ## Scripts Reference
 
 | Command | Description |
 |---------|-------------|
 | `bun run dev` | Start all apps in development mode |
-| `bun run dev:web` | Start Next.js web app |
-| `bun run dev:api` | Start Elysia.js API |
+| `bun run dev:web` | Start Next.js web app (http://localhost:3000) |
+| `bun run dev:api` | Start Elysia.js API (http://localhost:3001) |
 | `bun run dev:mobile` | Start React Native Metro bundler |
 | `bun run build` | Build all apps |
 | `bun run lint` | Run Biome linting |
 | `bun run lint:fix` | Auto-fix linting issues |
 | `bun run format` | Format code with Biome |
-| `bun run typecheck` | TypeScript type checking |
-| `bun run test` | Run tests |
+| `bun run typecheck` | TypeScript type checking (all packages) |
+| `bun run test` | Run tests (all packages) |
+| `bun run clean` | Clean build artifacts and node_modules |
 
 ## Resources
 
