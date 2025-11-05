@@ -1,13 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import NotFoundLayout from "@/components/NotFoundLayout";
 
 export default function NotFound() {
 	return (
-		<>
-			<Header />
+		<NotFoundLayout>
 			<main className="pt-20 min-h-screen flex items-center justify-center">
 				<div className="max-w-2xl mx-auto px-6 text-center">
 					<div className="mb-8">
@@ -34,8 +32,7 @@ export default function NotFound() {
 					</div>
 				</div>
 			</main>
-			<Footer />
-		</>
+		</NotFoundLayout>
 	);
 }
 
