@@ -1,5 +1,5 @@
 {
-	"buildCommand": "cd apps/web && bun run build",
+	"buildCommand": "bun install && cd apps/web && bun run build",
 	"devCommand": "cd apps/web && bun run dev",
 	"installCommand": "bun install",
 	"framework": "nextjs",
