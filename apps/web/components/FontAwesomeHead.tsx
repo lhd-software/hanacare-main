@@ -5,6 +5,10 @@ import { useEffect } from "react";
 export default function FontAwesomeHead() {
 	useEffect(() => {
 		// Check if Font Awesome is already loaded
+		if (typeof document === "undefined") {
+			return;
+		}
+
 		if (document.querySelector('link[href*="font-awesome"]')) {
 			return;
 		}
