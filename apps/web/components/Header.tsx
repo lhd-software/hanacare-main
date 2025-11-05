@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRobot } from '@fortawesome/free-solid-svg-icons';
 
 interface HeaderProps {
 	activeLink?: string;
@@ -21,7 +23,7 @@ export default function Header({ activeLink }: HeaderProps) {
 					<Link href="/" className="flex items-center gap-3">
 						<div className="w-10 h-10 gradient-hero rounded-xl flex items-center justify-center">
 							{isClient ? (
-								<i className="fa-solid fa-robot text-white text-xl" aria-hidden="true"></i>
+								<FontAwesomeIcon icon={faRobot} className="text-white text-xl" />
 							) : (
 								<span className="text-white text-xl font-bold">H</span>
 							)}

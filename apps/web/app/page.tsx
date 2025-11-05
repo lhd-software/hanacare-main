@@ -1,6 +1,22 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faStar,
+	faDownload,
+	faSun,
+	faBell,
+	faRobot,
+	faHeart,
+	faLungs,
+	faLink,
+	faChartLine,
+	faShieldHeart,
+	faHouseMedical,
+	faMobileScreen
+} from '@fortawesome/free-solid-svg-icons';
+import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
 	return (
@@ -23,21 +39,21 @@ export default function Home() {
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 mb-8">
 								<button className="px-8 py-4 gradient-button text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 flex items-center justify-center gap-3">
-									<i className="fa-brands fa-apple text-2xl"></i>
+									<FontAwesomeIcon icon={faApple} className="text-2xl" />
 									Tải trên App Store
 								</button>
 								<button className="px-8 py-4 bg-white text-brand-cyan font-bold rounded-xl border-2 border-brand-cyan hover:bg-brand-cyan hover:text-white transition-all flex items-center justify-center gap-3 shadow-lg">
-									<i className="fa-brands fa-google-play text-2xl"></i>
+									<FontAwesomeIcon icon={faGooglePlay} className="text-2xl" />
 									Tải trên Google Play
 								</button>
 							</div>
 							<div className="flex items-center gap-6 text-gray-600">
 								<div className="flex items-center gap-2">
-									<i className="fa-solid fa-star text-yellow-500"></i>
+									<FontAwesomeIcon icon={faStar} className="text-yellow-500" />
 									<span className="font-semibold">4.8/5</span>
 								</div>
 								<div className="flex items-center gap-2">
-									<i className="fa-solid fa-download text-brand-cyan"></i>
+									<FontAwesomeIcon icon={faDownload} className="text-brand-cyan" />
 									<span className="font-semibold">100K+ tải xuống</span>
 								</div>
 							</div>
@@ -58,21 +74,21 @@ export default function Home() {
 												<div>
 													<h3 className="text-lg font-bold text-white">Chào buổi sáng, Jane!</h3>
 													<div className="flex items-center gap-2">
-														<i className="fa-solid fa-sun text-yellow-300 text-xs"></i>
+														<FontAwesomeIcon icon={faSun} className="text-yellow-300 text-xs" />
 														<p className="text-xs text-white/90">Nắng, 24°C</p>
 													</div>
 												</div>
 											</div>
 											<div className="flex items-center gap-2">
 												<div className="w-8 h-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white">
-													<i className="fa-solid fa-bell text-sm"></i>
+													<FontAwesomeIcon icon={faBell} className="text-sm" />
 												</div>
 											</div>
 										</div>
 										<div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
 											<div className="flex items-center gap-3 mb-3">
 												<div className="w-10 h-10 bg-white/30 rounded-xl flex items-center justify-center">
-													<i className="fa-solid fa-robot text-white"></i>
+													<FontAwesomeIcon icon={faRobot} className="text-white" />
 												</div>
 												<div>
 													<h4 className="text-base font-bold text-white">HanaCare AI</h4>
@@ -98,14 +114,14 @@ export default function Home() {
 											<div className="bg-red-50 p-3 rounded-xl">
 												<div className="flex items-center justify-between mb-2">
 													<span className="text-sm font-medium text-red-800">Nhịp tim</span>
-													<i className="fa-solid fa-heart text-red-500"></i>
+													<FontAwesomeIcon icon={faHeart} className="text-red-500" />
 												</div>
 												<p className="text-2xl font-bold text-red-600">72</p>
 											</div>
 											<div className="bg-cyan-50 p-3 rounded-xl">
 												<div className="flex items-center justify-between mb-2">
 													<span className="text-sm font-medium text-cyan-800">SpO2</span>
-													<i className="fa-solid fa-lungs text-brand-cyan"></i>
+													<FontAwesomeIcon icon={faLungs} className="text-brand-cyan" />
 												</div>
 												<p className="text-2xl font-bold text-brand-cyan">98%</p>
 											</div>
@@ -134,7 +150,7 @@ export default function Home() {
 						<div className="grid md:grid-cols-3 gap-8">
 							<div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
 								<div className="w-16 h-16 gradient-hero rounded-2xl flex items-center justify-center mb-6">
-									<i className="fa-solid fa-robot text-white text-2xl"></i>
+									<FontAwesomeIcon icon={faRobot} className="text-white text-2xl" />
 								</div>
 								<h3 className="text-2xl font-bold text-gray-800 mb-4">AI Thông minh</h3>
 								<p className="text-gray-600 leading-relaxed">
@@ -144,7 +160,7 @@ export default function Home() {
 							</div>
 							<div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
 								<div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
-									<i className="fa-solid fa-link text-brand-green text-2xl"></i>
+									<FontAwesomeIcon icon={faLink} className="text-brand-green text-2xl" />
 								</div>
 								<h3 className="text-2xl font-bold text-gray-800 mb-4">Kết nối đa thiết bị</h3>
 								<p className="text-gray-600 leading-relaxed">
@@ -154,7 +170,7 @@ export default function Home() {
 							</div>
 							<div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
 								<div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
-									<i className="fa-solid fa-chart-line text-red-500 text-2xl"></i>
+									<FontAwesomeIcon icon={faChartLine} className="text-red-500 text-2xl" />
 								</div>
 								<h3 className="text-2xl font-bold text-gray-800 mb-4">Theo dõi toàn diện</h3>
 								<p className="text-gray-600 leading-relaxed">
@@ -174,7 +190,7 @@ export default function Home() {
 								<div className="space-y-6">
 									<div className="flex items-start gap-4">
 										<div className="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center flex-shrink-0">
-											<i className="fa-solid fa-shield-heart text-white"></i>
+											<FontAwesomeIcon icon={faShieldHeart} className="text-white" />
 										</div>
 										<div>
 											<h3 className="text-xl font-bold text-gray-800 mb-2">Bảo mật tuyệt đối</h3>
@@ -185,7 +201,7 @@ export default function Home() {
 									</div>
 									<div className="flex items-start gap-4">
 										<div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-											<i className="fa-solid fa-users-medical text-brand-green"></i>
+											<FontAwesomeIcon icon={faHouseMedical} className="text-brand-green" />
 										</div>
 										<div>
 											<h3 className="text-xl font-bold text-gray-800 mb-2">Tư vấn từ chuyên gia</h3>
@@ -196,7 +212,7 @@ export default function Home() {
 									</div>
 									<div className="flex items-start gap-4">
 										<div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
-											<i className="fa-solid fa-mobile-screen text-purple-600"></i>
+											<FontAwesomeIcon icon={faMobileScreen} className="text-purple-600" />
 										</div>
 										<div>
 											<h3 className="text-xl font-bold text-gray-800 mb-2">Giao diện thân thiện</h3>
@@ -239,14 +255,14 @@ export default function Home() {
 						</p>
 						<div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
 							<button className="px-10 py-5 bg-white text-brand-cyan font-bold rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 flex items-center gap-4">
-								<i className="fa-brands fa-apple text-3xl"></i>
+								<FontAwesomeIcon icon={faApple} className="text-3xl" />
 								<div className="text-left">
 									<p className="text-sm">Tải xuống trên</p>
 									<p className="text-xl font-bold">App Store</p>
 								</div>
 							</button>
 							<button className="px-10 py-5 bg-white text-brand-cyan font-bold rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 flex items-center gap-4">
-								<i className="fa-brands fa-google-play text-3xl"></i>
+								<FontAwesomeIcon icon={faGooglePlay} className="text-3xl" />
 								<div className="text-left">
 									<p className="text-sm">Tải xuống trên</p>
 									<p className="text-xl font-bold">Google Play</p>

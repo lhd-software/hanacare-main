@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRobot } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
 	const [isClient, setIsClient] = useState(false);
@@ -18,7 +21,7 @@ export default function Footer() {
 						<Link href="/" className="flex items-center gap-3 mb-6">
 							<div className="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center">
 								{isClient ? (
-									<i className="fa-solid fa-robot text-white text-xl" aria-hidden="true"></i>
+									<FontAwesomeIcon icon={faRobot} className="text-white text-xl" />
 								) : (
 									<span className="text-white text-xl font-bold">H</span>
 								)}
@@ -35,19 +38,19 @@ export default function Footer() {
 										href="#"
 										className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
 									>
-										<i className="fa-brands fa-facebook"></i>
+										<FontAwesomeIcon icon={faFacebook} />
 									</a>
 									<a
 										href="#"
 										className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
 									>
-										<i className="fa-brands fa-instagram"></i>
+										<FontAwesomeIcon icon={faInstagram} />
 									</a>
 									<a
 										href="#"
 										className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
 									>
-										<i className="fa-brands fa-youtube"></i>
+										<FontAwesomeIcon icon={faYoutube} />
 									</a>
 								</>
 							) : (
