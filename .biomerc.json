@@ -12,6 +12,7 @@
 			"**/dist/**",
 			"**/build/**",
 			"**/.next/**",
+			"**/.next",
 			"**/ios/**",
 			"**/android/**",
 			"**/.expo/**",
@@ -43,6 +44,10 @@
 			},
 			"correctness": {
 				"noUnusedVariables": "error",
+				"useExhaustiveDependencies": "warn",
+				"useHookAtTopLevel": "error"
+			},
+			"react": {
 				"useExhaustiveDependencies": "warn"
 			},
 			"performance": {

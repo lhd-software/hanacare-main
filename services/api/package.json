@@ -13,7 +13,8 @@
 		"elysia": "^1.1.23",
 		"@elysiajs/openapi": "^1.1.2",
 		"@elysiajs/cors": "^1.1.3",
-		"@supabase/supabase-js": "^2.47.10"
+		"@supabase/supabase-js": "^2.47.10",
+		"@hanacare/shared": "workspace:*"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.3.1",

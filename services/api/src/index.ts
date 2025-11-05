@@ -1,20 +1,11 @@
 import { cors } from "@elysiajs/cors";
-import { openAPI } from "@elysiajs/openapi";
+import { openapi } from "@elysiajs/openapi";
 import { Elysia } from "elysia";
 import healthRoutes from "./routes/health";
 
 const app = new Elysia()
 	.use(cors())
-	.use(
-		openAPI({
-			info: {
-				title: "HanaCare API",
-				version: "1.0.0",
-				description: "HanaCare Super App Backend API",
-			},
-			tags: [{ name: "health", description: "Health check endpoints" }],
-		}),
-	)
+	.use(openapi())
 	.use(healthRoutes)
 	.get("/", () => ({
 		message: "Hello HanaCare!",

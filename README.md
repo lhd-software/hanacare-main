@@ -97,7 +97,7 @@ hanacare-monorepo/
 
    # Or start individually
    bun run dev:web      # Next.js web app (http://localhost:3000)
-   bun run dev:api      # Elysia.js API (http://localhost:3000)
+   bun run dev:api      # Elysia.js API (http://localhost:3001)
    bun run dev:mobile   # React Native app
    ```
 
