@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cyan': '#00C2FF',
+                        'brand-green': '#7FD700',
+                        'cyan-50': '#E5F7FF',
+                        'cyan-100': '#CCF0FF',
+                        'cyan-200': '#99E0FF',
+                        'cyan-300': '#66D1FF',
+                        'cyan-400': '#33C1FF',
+                        'cyan-500': '#00C2FF',
+                        'cyan-600': '#009BCC',
+                        'cyan-700': '#007599',
+                        'cyan-800': '#004E66',
+                        'cyan-900': '#003543',
+                        'green-50': '#DFF7D6',
+                        'green-100': '#CEED9E',
+                        'green-200': '#B8E366',
+                        'green-300': '#A2D92E',
+                        'green-400': '#8CCF00',
+                        'green-500': '#7FD700',
+                        'green-600': '#66AB00',
+                        'green-700': '#4D8000',
+                        'green-800': '#335500',
+                        'green-900': '#1A2B00'
+                    }
+                }
+            }
+        }
+    </script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .gradient-button { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .shadow-brand { box-shadow: 0 20px 40px -10px rgba(0, 194, 255, 0.3); }
+        .hero-pattern { background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%); }
+    </style>
+</head>
+<body class="bg-white">
+    <header id="header" class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 gradient-hero rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-robot text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">HanaCare</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Tính năng</a>
+                    <a href="#benefits" class="text-brand-cyan font-semibold">Lợi ích</a>
+                    <a href="#download" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Tải xuống</a>
+                    <a href="#contact" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Liên hệ</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="px-6 py-3 gradient-button text-white font-semibold rounded-xl shadow-brand hover:shadow-lg transition-all transform hover:scale-105">
+                        Tải App
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section id="hero-benefits" class="bg-gradient-to-br from-slate-50 to-blue-50 hero-pattern h-[600px] flex items-center">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-800 leading-tight">
+                    Lợi ích vượt trội của
+                    <span class="block text-brand-cyan">HanaCare</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
+                    Khám phá những lợi ích đặc biệt mà HanaCare mang lại cho sức khỏe của bạn. 
+                    Từ lời khuyên cá nhân hóa đến theo dõi toàn diện, chúng tôi đồng hành cùng hành trình sức khỏe của bạn.
+                </p>
+                <div class="flex items-center justify-center gap-8 text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-users text-brand-cyan text-xl"></i>
+                        <span class="font-semibold">100K+ người dùng</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-star text-yellow-500 text-xl"></i>
+                        <span class="font-semibold">4.8/5 đánh giá</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-shield-heart text-brand-green text-xl"></i>
+                        <span class="font-semibold">Bảo mật tuyệt đối</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-benefits-section" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Những lợi ích cốt lõi</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">HanaCare không chỉ là một ứng dụng theo dõi sức khỏe thông thường</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div id="key-benefit-1" class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-20 h-20 gradient-hero rounded-3xl flex items-center justify-center mb-6 shadow-lg">
+                            <i class="fa-solid fa-brain text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">AI Cá nhân hóa</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">Trí tuệ nhân tạo học hỏi từ thói quen và dữ liệu của bạn để đưa ra lời khuyên phù hợp nhất cho từng cá nhân.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-cyan"></i>
+                                <span>Phân tích xu hướng sức khỏe</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-cyan"></i>
+                                <span>Dự đoán rủi ro sức khỏe</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-cyan"></i>
+                                <span>Lời khuyên thời gian thực</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="key-benefit-2" class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-20 h-20 bg-gradient-to-br from-brand-green to-green-600 rounded-3xl flex items-center justify-center mb-6 shadow-lg">
+                            <i class="fa-solid fa-chart-line text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Theo dõi toàn diện</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">Giám sát mọi khía cạnh sức khỏe từ thể chất đến tinh thần, tạo bức tranh sức khỏe hoàn chỉnh.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span>15+ chỉ số sức khỏe</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span>Theo dõi 24/7 liên tục</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span>Báo cáo chi tiết hàng tuần</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="key-benefit-3" class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-3xl flex items-center justify-center mb-6 shadow-lg">
+                            <i class="fa-solid fa-users-medical text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Tư vấn chuyên gia</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">Kết nối trực tiếp với đội ngũ bác sĩ, chuyên gia dinh dưỡng và huấn luyện viên chuyên nghiệp.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-600"></i>
+                                <span>Tư vấn 24/7</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-600"></i>
+                                <span>Video call với bác sĩ</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-600"></i>
+                                <span>Kế hoạch điều trị cá nhân</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials-section" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Người dùng nói gì về HanaCare</h2>
+                    <p class="text-xl text-gray-600">Hơn 100,000 người dùng đã tin tưởng và sử dụng HanaCare</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div id="testimonial-1" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="User" class="w-16 h-16 rounded-full">
+                            <div>
+                                <h4 class="font-bold text-gray-800">Nguyễn Thị Hoa</h4>
+                                <p class="text-gray-600">Giáo viên, 45 tuổi</p>
+                                <div class="flex text-yellow-500 mt-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"HanaCare đã giúp tôi kiểm soát được huyết áp cao. AI thông minh nhắc nhở tôi uống thuốc đúng giờ và đưa ra lời khuyên dinh dưỡng phù hợp. Tôi cảm thấy sức khỏe cải thiện rõ rệt sau 3 tháng sử dụng."</p>
+                    </div>
+                    
+                    <div id="testimonial-2" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="User" class="w-16 h-16 rounded-full">
+                            <div>
+                                <h4 class="font-bold text-gray-800">Trần Minh Tuấn</h4>
+                                <p class="text-gray-600">Kỹ sư IT, 32 tuổi</p>
+                                <div class="flex text-yellow-500 mt-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Công việc IT khiến tôi ngồi nhiều và ít vận động. HanaCare theo dõi hoạt động hàng ngày và tạo kế hoạch tập luyện phù hợp. Giờ tôi đã có thói quen tập thể dục đều đặn và cảm thấy khỏe mạnh hơn nhiều."</p>
+                    </div>
+                    
+                    <div id="testimonial-3" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="User" class="w-16 h-16 rounded-full">
+                            <div>
+                                <h4 class="font-bold text-gray-800">Lê Thị Mai</h4>
+                                <p class="text-gray-600">Bác sĩ, 38 tuổi</p>
+                                <div class="flex text-yellow-500 mt-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Là một bác sĩ, tôi rất khó tính về các ứng dụng y tế. HanaCare thực sự ấn tượng với độ chính xác cao và tính năng AI thông minh. Tôi đã giới thiệu cho nhiều bệnh nhân và họ đều hài lòng."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expert-reviews-section" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Đánh giá từ chuyên gia</h2>
+                    <p class="text-xl text-gray-600">Các chuyên gia y tế hàng đầu nhận xét về HanaCare</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div id="expert-review-1" class="bg-gradient-to-br from-cyan-50 to-white p-8 rounded-3xl shadow-lg">
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Expert" class="w-20 h-20 rounded-full">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">GS.TS Nguyễn Văn Dũng</h4>
+                                <p class="text-gray-600">Giám đốc Viện Tim mạch Quốc gia</p>
+                                <p class="text-sm text-brand-cyan font-medium">25+ năm kinh nghiệm</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-500 mb-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5 class="text-lg font-bold text-gray-800 mb-3">"Công nghệ AI tiên tiến trong y tế"</h5>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed">"HanaCare sử dụng thuật toán AI rất tiên tiến để phân tích dữ liệu tim mạch. Độ chính xác trong việc phát hiện bất thường nhịp tim đạt 98.5%, một con số ấn tượng so với các thiết bị y tế chuyên nghiệp."</p>
+                    </div>
+                    
+                    <div id="expert-review-2" class="bg-gradient-to-br from-green-50 to-white p-8 rounded-3xl shadow-lg">
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="Expert" class="w-20 h-20 rounded-full">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">TS. Phạm Thị Lan</h4>
+                                <p class="text-gray-600">Chuyên gia Dinh dưỡng, Bệnh viện Bạch Mai</p>
+                                <p class="text-sm text-brand-green font-medium">15+ năm kinh nghiệm</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-500 mb-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5 class="text-lg font-bold text-gray-800 mb-3">"Tư vấn dinh dưỡng cá nhân hóa"</h5>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed">"Tính năng tư vấn dinh dưỡng của HanaCare rất ấn tượng. AI có thể đưa ra kế hoạch ăn uống phù hợp với từng cá nhân dựa trên tình trạng sức khỏe, sở thích và mục tiêu. Đây là bước tiến lớn trong y học cá nhân hóa."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparison-section" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">So sánh với các ứng dụng khác</h2>
+                    <p class="text-xl text-gray-600">Tại sao HanaCare vượt trội hơn?</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="gradient-hero text-white">
+                                <tr>
+                                    <th class="text-left p-6 font-bold text-lg">Tính năng</th>
+                                    <th class="text-center p-6 font-bold text-lg">HanaCare</th>
+                                    <th class="text-center p-6 font-bold text-lg">Ứng dụng A</th>
+                                    <th class="text-center p-6 font-bold text-lg">Ứng dụng B</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="p-6 font-semibold text-gray-800">AI cá nhân hóa</td>
+                                    <td class="p-6 text-center">
+                                        <i class="fa-solid fa-check text-brand-green text-2xl"></i>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <i class="fa-solid fa-times text-red-500 text-2xl"></i>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <i class="fa-solid fa-minus text-gray-400 text-2xl"></i>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50">
+                                    <td class="p-6 font-semibold text-gray-800">Kết nối đa thiết bị</td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-brand-cyan">100+</span>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-gray-600">20+</span>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-gray-600">15+</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="p-6 font-semibold text-gray-800">Tư vấn chuyên gia 24/7</td>
+                                    <td class="p-6 text-center">
+                                        <i class="fa-solid fa-check text-brand-green text-2xl"></i>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <i class="fa-solid fa-times text-red-500 text-2xl"></i>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <i class="fa-solid fa-times text-red-500 text-2xl"></i>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50">
+                                    <td class="p-6 font-semibold text-gray-800">Bảo mật dữ liệu</td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-brand-cyan">HIPAA</span>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-gray-600">Cơ bản</span>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-gray-600">Cơ bản</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-6 font-semibold text-gray-800">Giá cả</td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-brand-green">Miễn phí</span>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-gray-600">$9.99/tháng</span>
+                                    </td>
+                                    <td class="p-6 text-center">
+                                        <span class="font-bold text-gray-600">$14.99/tháng</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats-section" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Những con số ấn tượng</h2>
+                    <p class="text-xl text-gray-600">HanaCare đã tạo ra tác động tích cực đến cộng đồng</p>
+                </div>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div id="stat-1" class="text-center bg-gradient-to-br from-cyan-50 to-cyan-100 p-8 rounded-2xl">
+                        <div class="w-16 h-16 gradient-hero rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-4xl font-bold text-brand-cyan mb-2">100K+</h3>
+                        <p class="text-gray-600 font-medium">Người dùng hoạt động</p>
+                    </div>
+                    <div id="stat-2" class="text-center bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
+                        <div class="w-16 h-16 bg-gradient-to-br from-brand-green to-green-600 rounded-2xl flex items-

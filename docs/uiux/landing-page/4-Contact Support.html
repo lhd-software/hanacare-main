@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cyan': '#00C2FF',
+                        'brand-green': '#7FD700',
+                        'cyan-50': '#E5F7FF',
+                        'cyan-100': '#CCF0FF',
+                        'cyan-200': '#99E0FF',
+                        'cyan-300': '#66D1FF',
+                        'cyan-400': '#33C1FF',
+                        'cyan-500': '#00C2FF',
+                        'cyan-600': '#009BCC',
+                        'cyan-700': '#007599',
+                        'cyan-800': '#004E66',
+                        'cyan-900': '#003543',
+                        'green-50': '#DFF7D6',
+                        'green-100': '#CEED9E',
+                        'green-200': '#B8E366',
+                        'green-300': '#A2D92E',
+                        'green-400': '#8CCF00',
+                        'green-500': '#7FD700',
+                        'green-600': '#66AB00',
+                        'green-700': '#4D8000',
+                        'green-800': '#335500',
+                        'green-900': '#1A2B00'
+                    }
+                }
+            }
+        }
+    </script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .gradient-button { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .shadow-brand { box-shadow: 0 20px 40px -10px rgba(0, 194, 255, 0.3); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header id="header" class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 gradient-hero rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-robot text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">HanaCare</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Tính năng</a>
+                    <a href="#" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Lợi ích</a>
+                    <a href="#" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Tải xuống</a>
+                    <a href="#" class="text-brand-cyan font-semibold">Hỗ trợ</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="px-6 py-3 gradient-button text-white font-semibold rounded-xl shadow-brand hover:shadow-lg transition-all transform hover:scale-105">
+                        Tải App
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section id="support-hero-section" class="gradient-hero h-[400px] flex items-center">
+            <div class="max-w-7xl mx-auto px-6 text-center text-white">
+                <h1 class="text-5xl font-bold mb-6">Trung tâm hỗ trợ</h1>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7. Tìm câu trả lời nhanh chóng hoặc liên hệ trực tiếp với đội ngũ chuyên gia của chúng tôi.</p>
+                <div class="max-w-2xl mx-auto">
+                    <div class="flex items-center bg-white/20 backdrop-blur-sm rounded-2xl p-2">
+                        <i class="fa-solid fa-search text-white/70 ml-4"></i>
+                        <input type="text" placeholder="Tìm kiếm câu hỏi thường gặp..." class="flex-1 bg-transparent text-white placeholder-white/70 px-4 py-3 outline-none">
+                        <button class="px-6 py-3 bg-white text-brand-cyan font-semibold rounded-xl hover:bg-gray-100 transition-colors">
+                            Tìm kiếm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-options-section" class="py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Liên hệ với chúng tôi</h2>
+                    <p class="text-xl text-gray-600">Chọn cách thức liên hệ phù hợp nhất với bạn</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div id="chat-option" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border-2 border-transparent hover:border-brand-cyan">
+                        <div class="w-16 h-16 gradient-hero rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                            <i class="fa-solid fa-comments text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Chat trực tuyến</h3>
+                        <p class="text-gray-600 mb-6 text-center">Nhận hỗ trợ ngay lập tức từ đội ngũ chuyên gia qua chat</p>
+                        <div class="text-center mb-6">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fa-solid fa-circle text-green-500 text-xs mr-2"></i>
+                                Đang trực tuyến
+                            </span>
+                        </div>
+                        <button class="w-full px-6 py-3 gradient-button text-white font-semibold rounded-xl shadow-brand hover:shadow-lg transition-all">
+                            Bắt đầu chat
+                        </button>
+                    </div>
+
+                    <div id="email-option" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                            <i class="fa-solid fa-envelope text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Email hỗ trợ</h3>
+                        <p class="text-gray-600 mb-6 text-center">Gửi email chi tiết và nhận phản hồi trong vòng 2 giờ</p>
+                        <div class="text-center mb-6">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                Phản hồi < 2h
+                            </span>
+                        </div>
+                        <button class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors">
+                            Gửi email
+                        </button>
+                    </div>
+
+                    <div id="phone-option" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                            <i class="fa-solid fa-phone text-brand-green text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Hotline 24/7</h3>
+                        <p class="text-gray-600 mb-6 text-center">Gọi điện trực tiếp để được hỗ trợ khẩn cấp</p>
+                        <div class="text-center mb-6">
+                            <span class="text-2xl font-bold text-brand-green">1900 1234</span>
+                        </div>
+                        <button class="w-full px-6 py-3 bg-brand-green text-white font-semibold rounded-xl hover:bg-green-600 transition-colors">
+                            Gọi ngay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="live-chat-section" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-3xl p-8 shadow-xl">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-800 mb-4">Chat với HanaCare AI</h2>
+                            <p class="text-gray-600 mb-6">Trợ lý AI thông minh của chúng tôi có thể giải đáp hầu hết các câu hỏi về ứng dụng và sức khỏe</p>
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-clock text-brand-cyan"></i>
+                                    <span class="text-sm text-gray-600">Phản hồi tức thì</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-language text-brand-cyan"></i>
+                                    <span class="text-sm text-gray-600">Hỗ trợ tiếng Việt</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chat-widget" class="bg-white rounded-2xl shadow-lg p-6">
+                            <div class="flex items-center gap-3 mb-4 pb-4 border-b">
+                                <div class="w-10 h-10 gradient-hero rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-robot text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-800">HanaCare AI</h3>
+                                    <p class="text-sm text-green-600">Đang trực tuyến</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3 mb-4 h-64 overflow-y-auto">
+                                <div class="flex gap-3">
+                                    <div class="w-8 h-8 gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-robot text-white text-sm"></i>
+                                    </div>
+                                    <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+                                        <p class="text-sm">Xin chào! Tôi là HanaCare AI. Tôi có thể giúp gì cho bạn hôm nay?</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 justify-end">
+                                    <div class="bg-brand-cyan rounded-lg p-3 max-w-xs">
+                                        <p class="text-sm text-white">Làm thế nào để kết nối Apple Watch với ứng dụng?</p>
+                                    </div>
+                                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="User" class="w-8 h-8 rounded-full flex-shrink-0">
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="w-8 h-8 gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-robot text-white text-sm"></i>
+                                    </div>
+                                    <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+                                        <p class="text-sm">Để kết nối Apple Watch, bạn cần: 1) Mở ứng dụng HanaCare 2) Vào Cài đặt > Thiết bị 3) Chọn "Thêm thiết bị" và làm theo hướng dẫn</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="text" placeholder="Nhập tin nhắn..." class="flex-1 border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-brand-cyan">
+                                <button class="px-4 py-2 gradient-button text-white rounded-lg hover:shadow-lg transition-all">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form-section" class="py-20 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Gửi yêu cầu hỗ trợ</h2>
+                    <p class="text-xl text-gray-600">Điền form dưới đây và chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <form id="support-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Họ và tên *</label>
+                                <input type="text" class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan" placeholder="Nhập họ và tên">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                                <input type="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan" placeholder="Nhập email">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Số điện thoại</label>
+                                <input type="tel" class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan" placeholder="Nhập số điện thoại">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Loại vấn đề *</label>
+                                <select class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan">
+                                    <option>Chọn loại vấn đề</option>
+                                    <option>Kết nối thiết bị</option>
+                                    <option>Đồng bộ dữ liệu</option>
+                                    <option>Tài khoản & Đăng nhập</option>
+                                    <option>Thanh toán</option>
+                                    <option>Báo lỗi</option>
+                                    <option>Khác</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Mô tả chi tiết *</label>
+                            <textarea rows="6" class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan" placeholder="Mô tả chi tiết vấn đề bạn đang gặp phải..."></textarea>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="checkbox" id="priority" class="w-4 h-4 text-brand-cyan border-gray-300 rounded focus:ring-brand-cyan">
+                            <label for="priority" class="text-sm text-gray-700">Đây là vấn đề khẩn cấp</label>
+                        </div>
+                        <div class="flex gap-4">
+                            <button type="submit" class="px-8 py-3 gradient-button text-white font-semibold rounded-xl shadow-brand hover:shadow-lg transition-all transform hover:scale-105">
+                                Gửi yêu cầu
+                            </button>
+                            <button type="button" class="px-8 py-3 bg-gray-200 text-gray-700 font-semibold rounded-xl hover:bg-gray-300 transition-colors">
+                                Hủy bỏ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-section" class="py-20">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Câu hỏi thường gặp</h2>
+                    <p class="text-xl text-gray-600">Tìm câu trả lời nhanh chóng cho những thắc mắc phổ biến</p>
+                </div>
+                <div class="space-y-4">
+                    <div id="faq-1" class="bg-white rounded-xl shadow-sm border border-gray-200">
+                        <button class="w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Làm thế nào để kết nối Apple Watch với HanaCare?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                        </button>
+                    </div>
+                    <div id="faq-2" class="bg-white rounded-xl shadow-sm border border-gray-200">
+                        <button class="w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">HanaCare có miễn phí không?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                        </button>
+                    </div>
+                    <div id="faq-3" class="bg-white rounded-xl shadow-sm border border-gray-200">
+                        <button class="w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Dữ liệu sức khỏe của tôi có được bảo mật không?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                        </button>
+                    </div>
+                    <div id="faq-4" class="bg-white rounded-xl shadow-sm border border-gray-200">
+                        <button class="w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Tôi có thể sử dụng HanaCare trên nhiều thiết bị không?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                        </button>
+                    </div>
+                    <div id="faq-5" class="bg-white rounded-xl shadow-sm border border-gray-200">
+                        <button class="w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Làm thế nào để hủy đăng ký gói Premium?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <button class="px-6 py-3 bg-brand-cyan text-white font-semibold rounded-xl hover:bg-cyan-600 transition-colors">
+                        Xem tất cả FAQ
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="footer-brand">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-robot text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold">HanaCare</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Ứng dụng chăm sóc sức khỏe thông minh với AI, mang đến trải nghiệm y tế tốt nhất cho mọi người.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="footer-product">
+                    <h3 class="text-lg font-bold mb-6">Sản phẩm</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Tính năng</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bảng giá</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">API</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tích hợp</a></li>
+                    </ul>
+                </div>
+                <div id="footer-company">
+                    <h3 class="text-lg font-bold mb-6">Công ty</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Về chúng tôi</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tin tức</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tuyển dụng</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div id="footer-support">
+                    <h3 class="text-lg font-bold mb-6">Hỗ trợ</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Trung tâm trợ giúp</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Hướng dẫn</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bảo mật</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Điều khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2024 HanaCare. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

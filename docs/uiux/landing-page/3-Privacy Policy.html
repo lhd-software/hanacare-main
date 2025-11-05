@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cyan': '#00C2FF',
+                        'brand-green': '#7FD700',
+                        'cyan-50': '#E5F7FF',
+                        'cyan-100': '#CCF0FF',
+                        'cyan-200': '#99E0FF',
+                        'cyan-300': '#66D1FF',
+                        'cyan-400': '#33C1FF',
+                        'cyan-500': '#00C2FF',
+                        'cyan-600': '#009BCC',
+                        'cyan-700': '#007599',
+                        'cyan-800': '#004E66',
+                        'cyan-900': '#003543',
+                        'green-50': '#DFF7D6',
+                        'green-100': '#CEED9E',
+                        'green-200': '#B8E366',
+                        'green-300': '#A2D92E',
+                        'green-400': '#8CCF00',
+                        'green-500': '#7FD700',
+                        'green-600': '#66AB00',
+                        'green-700': '#4D8000',
+                        'green-800': '#335500',
+                        'green-900': '#1A2B00'
+                    }
+                }
+            }
+        }
+    </script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .gradient-button { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .shadow-brand { box-shadow: 0 20px 40px -10px rgba(0, 194, 255, 0.3); }
+    </style>
+</head>
+<body class="bg-white">
+    <header id="header" class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 gradient-hero rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-robot text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">HanaCare</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Trang chủ</a>
+                    <a href="#" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Tính năng</a>
+                    <a href="#" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Liên hệ</a>
+                    <a href="#" class="text-brand-cyan font-semibold">Chính sách bảo mật</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="px-6 py-3 gradient-button text-white font-semibold rounded-xl shadow-brand hover:shadow-lg transition-all transform hover:scale-105">
+                        Tải App
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-28">
+        <section id="hero-privacy" class="bg-gradient-to-br from-cyan-50 to-blue-50 py-16">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <div class="w-20 h-20 gradient-hero rounded-3xl flex items-center justify-center mx-auto mb-8">
+                    <i class="fa-solid fa-shield-heart text-white text-3xl"></i>
+                </div>
+                <h1 class="text-5xl font-bold text-gray-800 mb-6">Chính sách bảo mật dữ liệu</h1>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    HanaCare cam kết bảo vệ thông tin sức khỏe cá nhân của bạn theo tiêu chuẩn HIPAA và các quy định bảo mật quốc tế
+                </p>
+                <div class="flex items-center justify-center gap-6 text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-calendar text-brand-cyan"></i>
+                        <span class="font-medium">Cập nhật: 15/11/2024</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-certificate text-brand-green"></i>
+                        <span class="font-medium">HIPAA Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="privacy-overview" class="py-16">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div id="overview-card-1" class="bg-cyan-50 p-8 rounded-2xl border border-cyan-100">
+                        <div class="w-16 h-16 bg-brand-cyan rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-lock text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-cyan-900 mb-4">Mã hóa End-to-End</h3>
+                        <p class="text-cyan-800">Tất cả dữ liệu được mã hóa AES-256 từ thiết bị đến server, đảm bảo không ai có thể truy cập trái phép.</p>
+                    </div>
+                    <div id="overview-card-2" class="bg-green-50 p-8 rounded-2xl border border-green-100">
+                        <div class="w-16 h-16 bg-brand-green rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-user-shield text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-green-900 mb-4">Kiểm soát dữ liệu</h3>
+                        <p class="text-green-800">Bạn có toàn quyền kiểm soát dữ liệu cá nhân, có thể xem, chỉnh sửa hoặc xóa bất cứ lúc nào.</p>
+                    </div>
+                    <div id="overview-card-3" class="bg-purple-50 p-8 rounded-2xl border border-purple-100">
+                        <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-eye-slash text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-purple-900 mb-4">Zero Knowledge</h3>
+                        <p class="text-purple-800">Chúng tôi áp dụng nguyên tắc Zero Knowledge - không thể đọc dữ liệu cá nhân của bạn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hipaa-compliance" class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Tuân thủ quy định HIPAA</h2>
+                    <p class="text-xl text-gray-600">HanaCare đáp ứng đầy đủ các yêu cầu bảo mật theo tiêu chuẩn HIPAA</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="space-y-6">
+                            <div id="hipaa-item-1" class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-cyan rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-database text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Bảo vệ PHI (Protected Health Information)</h3>
+                                    <p class="text-gray-600">Tất cả thông tin sức khỏe được bảo vệ theo chuẩn PHI với các biện pháp bảo mật vật lý, kỹ thuật và quản trị.</p>
+                                </div>
+                            </div>
+                            <div id="hipaa-item-2" class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-green rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Kiểm soát truy cập nghiêm ngặt</h3>
+                                    <p class="text-gray-600">Chỉ những nhân viên được ủy quyền mới có thể truy cập dữ liệu, với đầy đủ log audit và giám sát.</p>
+                                </div>
+                            </div>
+                            <div id="hipaa-item-3" class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-clipboard-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Đánh giá bảo mật định kỳ</h3>
+                                    <p class="text-gray-600">Thực hiện kiểm tra bảo mật hàng quý bởi các công ty bảo mật hàng đầu thế giới.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hipaa-certification" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-gradient-to-br from-brand-cyan to-brand-green rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fa-solid fa-certificate text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Chứng nhận HIPAA</h3>
+                            <p class="text-gray-600 mb-6">HanaCare đã được chứng nhận tuân thủ đầy đủ các quy định HIPAA về bảo vệ thông tin sức khỏe cá nhân.</p>
+                            <div class="bg-green-50 p-4 rounded-xl border border-green-200">
+                                <div class="flex items-center justify-center gap-2 text-green-800">
+                                    <i class="fa-solid fa-shield-check text-green-600"></i>
+                                    <span class="font-bold">Chứng nhận hợp lệ đến 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data-handling" class="py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">Cách chúng tôi xử lý dữ liệu của bạn</h2>
+                <div class="space-y-12">
+                    <div id="data-collection" class="bg-cyan-50 p-8 rounded-2xl border border-cyan-100">
+                        <h3 class="text-2xl font-bold text-cyan-900 mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-download text-brand-cyan"></i>
+                            Thu thập dữ liệu
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-cyan-800 mb-4">Dữ liệu chúng tôi thu thập:</h4>
+                                <ul class="space-y-2 text-cyan-700">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i>Thông tin sức khỏe từ thiết bị kết nối</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i>Dữ liệu sinh trắc học (nhịp tim, huyết áp)</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i>Thông tin cá nhân cơ bản (tuổi, giới tính)</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i>Lịch sử hoạt động trong ứng dụng</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-cyan-800 mb-4">Dữ liệu chúng tôi KHÔNG thu thập:</h4>
+                                <ul class="space-y-2 text-cyan-700">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-times text-red-500"></i>Thông tin tài chính</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-times text-red-500"></i>Dữ liệu vị trí chi tiết</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-times text-red-500"></i>Tin nhắn cá nhân</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-times text-red-500"></i>Danh bạ điện thoại</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="data-storage" class="bg-green-50 p-8 rounded-2xl border border-green-100">
+                        <h3 class="text-2xl font-bold text-green-900 mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-server text-brand-green"></i>
+                            Lưu trữ dữ liệu
+                        </h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-white p-6 rounded-xl shadow-sm">
+                                <h4 class="text-lg font-semibold text-green-800 mb-3">Mã hóa</h4>
+                                <p class="text-green-700 text-sm">Dữ liệu được mã hóa AES-256 bit trước khi lưu trữ</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-sm">
+                                <h4 class="text-lg font-semibold text-green-800 mb-3">Phân tán</h4>
+                                <p class="text-green-700 text-sm">Dữ liệu được phân tán trên nhiều server bảo mật</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-sm">
+                                <h4 class="text-lg font-semibold text-green-800 mb-3">Sao lưu</h4>
+                                <p class="text-green-700 text-sm">Sao lưu tự động hàng ngày với mã hóa riêng biệt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="data-sharing" class="bg-orange-50 p-8 rounded-2xl border border-orange-100">
+                        <h3 class="text-2xl font-bold text-orange-900 mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-share-nodes text-orange-600"></i>
+                            Chia sẻ dữ liệu
+                        </h3>
+                        <div class="bg-white p-6 rounded-xl border-l-4 border-orange-500">
+                            <h4 class="text-lg font-bold text-orange-800 mb-3">Cam kết không chia sẻ</h4>
+                            <p class="text-orange-700 mb-4">HanaCare cam kết KHÔNG bao giờ bán, cho thuê hoặc chia sẻ dữ liệu sức khỏe của bạn với bên thứ ba vì mục đích thương mại.</p>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h5 class="font-semibold text-orange-800 mb-2">Trường hợp duy nhất chia sẻ:</h5>
+                                    <ul class="text-sm text-orange-700 space-y-1">
+                                        <li>• Khi có sự đồng ý rõ ràng của bạn</li>
+                                        <li>• Trường hợp khẩn cấp y tế</li>
+                                        <li>• Theo yêu cầu pháp lý bắt buộc</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-orange-800 mb-2">Bảo vệ khi chia sẻ:</h5>
+                                    <ul class="text-sm text-orange-700 space-y-1">
+                                        <li>• Ẩn danh hóa hoàn toàn</li>
+                                        <li>• Mã hóa truyền tải</li>
+                                        <li>• Giới hạn thời gian truy cập</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="user-rights" class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">Quyền của người dùng</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div id="rights-list" class="space-y-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-cyan">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-eye text-brand-cyan"></i>
+                                Quyền truy cập
+                            </h3>
+                            <p class="text-gray-600">Xem tất cả dữ liệu cá nhân mà chúng tôi lưu trữ về bạn bất cứ lúc nào.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-green">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-pen text-brand-green"></i>
+                                Quyền chỉnh sửa
+                            </h3>
+                            <p class="text-gray-600">Cập nhật, sửa đổi hoặc bổ sung thông tin cá nhân của bạn.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-red-500">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-trash text-red-500"></i>
+                                Quyền xóa
+                            </h3>
+                            <p class="text-gray-600">Yêu cầu xóa hoàn toàn dữ liệu cá nhân khỏi hệ thống của chúng tôi.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-purple-500">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-download text-purple-500"></i>
+                                Quyền xuất dữ liệu
+                            </h3>
+                            <p class="text-gray-600">Tải xuống bản sao dữ liệu cá nhân ở định dạng có thể đọc được.</p>
+                        </div>
+                    </div>
+                    <div id="contact-privacy" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Liên hệ về bảo mật</h3>
+                        <p class="text-gray-600 mb-6">Có thắc mắc về quyền riêng tư hoặc cần hỗ trợ về dữ liệu cá nhân?</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-envelope text-brand-cyan"></i>
+                                <span class="text-gray-700">privacy@hanacare.com</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-brand-green"></i>
+                                <span class="text-gray-700">1800-1234 (24/7)</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-clock text-orange-500"></i>
+                                <span class="text-gray-700">Phản hồi trong 24h</span>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 px-6 py-3 gradient-button text-white font-semibold rounded-xl shadow-brand hover:shadow-lg transition-all">
+                            Gửi yêu cầu bảo mật
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security-measures" class="py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">Biện pháp bảo mật kỹ thuật</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div id="security-card-1" class="bg-cyan-50 p-6 rounded-2xl text-center border border-cyan-100">
+                        <div class="w-16 h-16 bg-brand-cyan rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-shield-halved text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-cyan-900 mb-2">Firewall</h3>
+                        <p class="text-cyan-700 text-sm">Tường lửa đa lớp bảo vệ 24/7</p>
+                    </div>
+                    <div id="security-card-2" class="bg-green-50 p-6 rounded-2xl text-center border border-green-100">
+                        <div class="w-16 h-16 bg-brand-green rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-key text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-green-900 mb-2">2FA</h3>
+                        <p class="text-green-700 text-sm">Xác thực hai yếu tố bắt buộc</p>
+                    </div>
+                    <div id="security-card-3" class="bg-orange-50 p-6 rounded-2xl text-center border border-orange-100">
+                        <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-bug text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-orange-900 mb-2">Penetration Test</h3>
+                        <p class="text-orange-700 text-sm">Kiểm tra xâm nhập định kỳ</p>
+                    </div>
+                    <div id="security-card-4" class="bg-purple-50 p-6 rounded-2xl text-center border border-purple-100">
+                        <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-search text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-purple-900 mb-2">Monitoring</h3>
+                        <p class="text-purple-700 text-sm">Giám sát bất thường 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="footer-brand">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-robot text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold">HanaCare</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Ứng dụng chăm sóc sức khỏe thông minh với AI, bảo vệ quyền riêng tư tuyệt đối.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        

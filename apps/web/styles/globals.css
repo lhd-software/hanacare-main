@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Font Awesome - Load via CSS import as fallback */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
@@ -17,11 +22,30 @@
 }
 
 body {
+	font-family: 'Inter', sans-serif;
 	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+	background: rgb(var(--background-start-rgb));
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+@layer utilities {
+	.gradient-hero {
+		background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%);
+	}
+	
+	.gradient-button {
+		background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%);
+	}
+	
+	.shadow-brand {
+		box-shadow: 0 20px 40px -10px rgba(0, 194, 255, 0.3);
+	}
+	
+	.hero-pattern {
+		background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), 
+		                  radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
+	}
 }

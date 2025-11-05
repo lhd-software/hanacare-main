@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
+import FontAwesomeHead from "@/components/FontAwesomeHead";
 
 export const metadata: Metadata = {
 	title: "HanaCare - Super App",
@@ -12,8 +13,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body>{children}</body>
+		<html lang="vi">
+			<body className="bg-white">
+				<FontAwesomeHead />
+				{children}
+			</body>
 		</html>
 	);
 }

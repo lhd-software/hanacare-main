@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cyan': '#00C2FF',
+                        'brand-green': '#7FD700',
+                        'cyan-50': '#E5F7FF',
+                        'cyan-100': '#CCF0FF',
+                        'cyan-200': '#99E0FF',
+                        'cyan-300': '#66D1FF',
+                        'cyan-400': '#33C1FF',
+                        'cyan-500': '#00C2FF',
+                        'cyan-600': '#009BCC',
+                        'cyan-700': '#007599',
+                        'cyan-800': '#004E66',
+                        'cyan-900': '#003543',
+                        'green-50': '#DFF7D6',
+                        'green-100': '#CEED9E',
+                        'green-200': '#B8E366',
+                        'green-300': '#A2D92E',
+                        'green-400': '#8CCF00',
+                        'green-500': '#7FD700',
+                        'green-600': '#66AB00',
+                        'green-700': '#4D8000',
+                        'green-800': '#335500',
+                        'green-900': '#1A2B00'
+                    }
+                }
+            }
+        }
+    </script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .gradient-button { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .shadow-brand { box-shadow: 0 20px 40px -10px rgba(0, 194, 255, 0.3); }
+        .hero-pattern { background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%); }
+    </style>
+</head>
+<body class="bg-white">
+    <header id="header" class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 gradient-hero rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-robot text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">HanaCare</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-brand-cyan font-medium border-b-2 border-brand-cyan">Tính năng</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Lợi ích</a>
+                    <a href="#download" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Tải xuống</a>
+                    <a href="#contact" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Liên hệ</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="px-6 py-3 gradient-button text-white font-semibold rounded-xl shadow-brand hover:shadow-lg transition-all transform hover:scale-105">
+                        Tải App
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section id="features-hero-section" class="bg-gradient-to-br from-slate-50 to-blue-50 hero-pattern h-[500px] flex items-center">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight text-gray-800">
+                        Tính năng
+                        <span class="block text-brand-cyan">toàn diện</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                        Khám phá những tính năng tiên tiến của HanaCare - từ AI thông minh đến kết nối đa thiết bị, 
+                        tất cả được thiết kế để chăm sóc sức khỏe của bạn một cách tối ưu nhất.
+                    </p>
+                    <div class="flex justify-center items-center gap-6 text-gray-600">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-yellow-500"></i>
+                            <span class="font-semibold">15+ tính năng chính</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-shield-heart text-brand-cyan"></i>
+                            <span class="font-semibold">100% bảo mật</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-features-section" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Trí tuệ nhân tạo tiên tiến</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">HanaCare AI được phát triển với công nghệ machine learning hàng đầu</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="space-y-8">
+                            <div id="ai-feature-1" class="flex items-start gap-6">
+                                <div class="w-16 h-16 gradient-hero rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-brain text-white text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Phân tích thông minh</h3>
+                                    <p class="text-gray-600 leading-relaxed">AI phân tích hàng nghìn điểm dữ liệu mỗi ngày từ các thiết bị của bạn, nhận diện xu hướng và đưa ra cảnh báo sớm về các vấn đề sức khỏe tiềm ẩn.</p>
+                                </div>
+                            </div>
+                            <div id="ai-feature-2" class="flex items-start gap-6">
+                                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-user-doctor text-brand-green text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Lời khuyên cá nhân hóa</h3>
+                                    <p class="text-gray-600 leading-relaxed">Dựa trên hồ sơ sức khỏe cá nhân, AI đưa ra những lời khuyên phù hợp về chế độ ăn, tập luyện và lối sống để cải thiện sức khỏe tổng thể.</p>
+                                </div>
+                            </div>
+                            <div id="ai-feature-3" class="flex items-start gap-6">
+                                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-chart-line text-purple-600 text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Dự đoán xu hướng</h3>
+                                    <p class="text-gray-600 leading-relaxed">Công nghệ predictive analytics giúp dự báo các chỉ số sức khỏe trong tương lai, hỗ trợ bạn có kế hoạch chăm sóc sức khỏe proactive.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="relative">
+                            <img class="w-96 h-96 rounded-3xl shadow-2xl object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1966ddcb4f-879b075cf4c109a6060f.png" alt="futuristic AI brain interface with health data visualization, holographic displays, medical charts, blue and green color scheme, modern technology" />
+                            <div class="absolute -top-4 -right-4 w-20 h-20 bg-brand-cyan/20 rounded-full animate-pulse"></div>
+                            <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-brand-green/20 rounded-full animate-pulse" style="animation-delay: 1s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="monitoring-features-section" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Theo dõi sức khỏe toàn diện</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Giám sát mọi khía cạnh của sức khỏe với độ chính xác cao</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div id="monitoring-card-1" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-heart-pulse text-red-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Tim mạch</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Nhịp tim liên tục 24/7
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Huyết áp tự động
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                ECG chuyên nghiệp
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Cảnh báo bất thường
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="monitoring-card-2" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-lungs text-brand-cyan text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Hô hấp</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                SpO2 liên tục
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Tần số thở
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Chất lượng không khí
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Cảnh báo ngạt thở
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="monitoring-card-3" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-bed text-brand-green text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Giấc ngủ</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Chu kỳ ngủ sâu/nông
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Chất lượng giấc ngủ
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Thời gian thức dậy
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Smart alarm
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="monitoring-card-4" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-dumbbell text-orange-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Vận động</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Đếm bước chính xác
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Calories tiêu thụ
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Phân tích tư thế
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Workout tracking
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="monitoring-card-5" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-droplet text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Sinh hóa</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Đường huyết
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Cholesterol
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Hormone
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Vitamin & khoáng chất
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="monitoring-card-6" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-brain text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Tâm lý</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Mức độ stress
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Tâm trạng hàng ngày
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Meditation tracking
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                Mental health score
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="device-integration-section" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Kết nối đa thiết bị</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Tương thích với hơn 100+ thiết bị y tế từ các thương hiệu hàng đầu</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="grid grid-cols-3 gap-6">
+                        <div id="device-brand-1" class="bg-gray-50 p-6 rounded-2xl flex flex-col items-center">
+                            <i class="fa-brands fa-apple text-4xl text-gray-600 mb-3"></i>
+                            <span class="font-semibold text-gray-800">Apple</span>
+                        </div>
+                        <div id="device-brand-2" class="bg-gray-50 p-6 rounded-2xl flex flex-col items-center">
+                            <i class="fa-brands fa-android text-4xl text-green-600 mb-3"></i>
+                            <span class="font-semibold text-gray-800">Samsung</span>
+                        </div>
+                        <div id="device-brand-3" class="bg-gray-50 p-6 rounded-2xl flex flex-col items-center">
+                            <i class="fa-solid fa-watch text-4xl text-orange-600 mb-3"></i>
+                            <span class="font-semibold text-gray-800">Xiaomi</span>
+                        </div>
+                        <div id="device-brand-4" class="bg-gray-50 p-6 rounded-2xl flex flex-col items-center">
+                            <i class="fa-solid fa-weight-scale text-4xl text-blue-600 mb-3"></i>
+                            <span class="font-semibold text-gray-800">Withings</span>
+                        </div>
+                        <div id="device-brand-5" class="bg-gray-50 p-6 rounded-2xl flex flex-col items-center">
+                            <i class="fa-solid fa-thermometer text-4xl text-red-600 mb-3"></i>
+                            <span class="font-semibold text-gray-800">Omron</span>
+                        </div>
+                        <div id="device-brand-6" class="bg-gray-50 p-6 rounded-2xl flex flex-col items-center">
+                            <i class="fa-solid fa-heartbeat text-4xl text-purple-600 mb-3"></i>
+                            <span class="font-semibold text-gray-800">Fitbit</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">Đồng bộ tự động & an toàn</h3>
+                        <div class="space-y-6">
+                            <div id="integration-feature-1" class="flex items-start gap-4">
+                                <div class="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-sync text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800 mb-2">Đồng bộ realtime</h4>
+                                    <p class="text-gray-600">Dữ liệu từ các thiết bị được đồng bộ tự động trong thời gian thực, không cần can thiệp thủ công.</p>
+                                </div>
+                            </div>
+                            <div id="integration-feature-2" class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-shield-halved text-brand-green"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800 mb-2">Bảo mật end-to-end</h4>
+                                    <p class="text-gray-600">Mọi dữ liệu được mã hóa từ thiết bị đến server, đảm bảo quyền riêng tư tuyệt đối.</p>
+                                </div>
+                            </div>
+                            <div id="integration-feature-3" class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-plug text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800 mb-2">Kết nối dễ dàng</h4>
+                                    <p class="text-gray-600">Chỉ cần vài bước đơn giản để kết nối thiết bị mới, hỗ trợ Bluetooth, WiFi và NFC.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="smart-alerts-section" class="py-20 bg-gradient-to-br from-cyan-50 to-blue-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Cảnh báo thông minh</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Hệ thống cảnh báo AI giúp phát hiện sớm các vấn đề sức khỏe</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div id="alert-card-1" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-triangle-exclamation text-red-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Cảnh báo khẩn cấp</h3>
+                        <p class="text-gray-600 mb-6">Phát hiện các tình huống nguy hiểm như đau tim, ngạt thở, té ngã và tự động gửi cảnh báo đến người thân.</p>
+                        <div class="bg-red-50 p-4 rounded-xl">
+                            <p class="text-sm text-red-800 font-medium">Ví dụ: Nhịp tim bất thường > 120 BPM trong 5 phút</p>
+                        </div>
+                    </div>
+                    <div id="alert-card-2" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-bell text-orange-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Nhắc nhở thông minh</h3>
+                        <p class="text-gray-600 mb-6">Nhắc nhở uống thuốc, tập thể dục, uống nước và các hoạt động chăm sóc sức khỏe dựa trên thói quen cá nhân.</p>
+                        <div class="bg-orange-50 p-4 rounded-xl">
+                            <p class="text-sm text-orange-800 font-medium">Ví dụ: Đã 2 giờ chưa uống nước, cần bổ sung 250ml</p>
+                        </div>
+                    </div>
+                    <div id="alert-card-3" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-chart-line text-brand-green text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Xu hướng sức khỏe</h3>
+                        <p class="text-gray-600 mb-6">Phân tích xu hướng dài hạn và cảnh báo sớm về những thay đổi bất thường trong các chỉ số sức khỏe.</p>
+                        <div class="bg-green-50 p-4 rounded-xl">
+                            <p class="text-sm text-green-800 font-medium">Ví dụ: Huyết áp tă

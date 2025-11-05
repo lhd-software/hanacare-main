@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cyan': '#00C2FF',
+                        'brand-green': '#7FD700',
+                        'cyan-50': '#E5F7FF',
+                        'cyan-100': '#CCF0FF',
+                        'cyan-200': '#99E0FF',
+                        'cyan-300': '#66D1FF',
+                        'cyan-400': '#33C1FF',
+                        'cyan-500': '#00C2FF',
+                        'cyan-600': '#009BCC',
+                        'cyan-700': '#007599',
+                        'cyan-800': '#004E66',
+                        'cyan-900': '#003543',
+                        'green-50': '#DFF7D6',
+                        'green-100': '#CEED9E',
+                        'green-200': '#B8E366',
+                        'green-300': '#A2D92E',
+                        'green-400': '#8CCF00',
+                        'green-500': '#7FD700',
+                        'green-600': '#66AB00',
+                        'green-700': '#4D8000',
+                        'green-800': '#335500',
+                        'green-900': '#1A2B00'
+                    }
+                }
+            }
+        }
+    </script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .gradient-button { background: linear-gradient(135deg, #00C2FF 0%, #7FD700 100%); }
+        .shadow-brand { box-shadow: 0 20px 40px -10px rgba(0, 194, 255, 0.3); }
+        .pricing-card-popular { box-shadow: 0 25px 50px -10px rgba(0, 194, 255, 0.4); }
+    </style>
+</head>
+<body class="bg-white">
+    <header id="header" class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 gradient-hero rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-robot text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">HanaCare</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Tính năng</a>
+                    <a href="#pricing" class="text-brand-cyan font-semibold">Bảng giá</a>
+                    <a href="#download" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Tải xuống</a>
+                    <a href="#contact" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">Liên hệ</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="px-6 py-3 gradient-button text-white font-semibold rounded-xl shadow-brand hover:shadow-lg transition-all transform hover:scale-105">
+                        Tải App
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section id="pricing-hero-section" class="bg-gradient-to-br from-slate-50 to-blue-50 h-[400px] flex items-center">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-800">
+                    Chọn gói phù hợp
+                    <span class="block text-brand-cyan">với nhu cầu của bạn</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Trải nghiệm chăm sóc sức khỏe thông minh với các gói dịch vụ linh hoạt, 
+                    từ cơ bản đến cao cấp với AI và tư vấn chuyên gia
+                </p>
+            </div>
+        </section>
+
+        <section id="pricing-plans-section" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center bg-white rounded-full p-2 mb-8 shadow-lg">
+                        <button class="px-6 py-3 bg-brand-cyan text-white rounded-full font-semibold transition-all">
+                            Thanh toán hàng tháng
+                        </button>
+                        <button class="px-6 py-3 text-gray-600 hover:text-brand-cyan transition-all font-semibold">
+                            Thanh toán hàng năm (Tiết kiệm 20%)
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div id="pricing-card-basic" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+                        <div class="text-center mb-8">
+                            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fa-solid fa-heart text-gray-600 text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Gói Cơ Bản</h3>
+                            <p class="text-gray-600 mb-6">Phù hợp cho người mới bắt đầu</p>
+                            <div class="mb-6">
+                                <span class="text-5xl font-bold text-gray-800">Miễn phí</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Theo dõi 3 chỉ số cơ bản</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Kết nối 1 thiết bị</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Báo cáo tuần</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Hỗ trợ cộng đồng</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-4 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-all">
+                            Bắt đầu miễn phí
+                        </button>
+                    </div>
+
+                    <div id="pricing-card-premium" class="bg-white rounded-3xl p-8 shadow-lg pricing-card-popular relative transform scale-105">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                            <span class="bg-gradient-to-r from-brand-cyan to-brand-green text-white px-6 py-2 rounded-full text-sm font-bold">
+                                Phổ biến nhất
+                            </span>
+                        </div>
+                        <div class="text-center mb-8">
+                            <div class="w-16 h-16 gradient-hero rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fa-solid fa-robot text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Gói Premium</h3>
+                            <p class="text-gray-600 mb-6">Tích hợp AI thông minh</p>
+                            <div class="mb-6">
+                                <span class="text-5xl font-bold text-brand-cyan">299K</span>
+                                <span class="text-gray-600">/tháng</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Theo dõi không giới hạn chỉ số</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Kết nối 5 thiết bị</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">AI phân tích và dự đoán</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Báo cáo hàng ngày</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Chat với HanaCare AI</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Hỗ trợ ưu tiên</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-4 gradient-button text-white font-bold rounded-xl shadow-brand hover:shadow-lg transition-all transform hover:scale-105">
+                            Chọn gói Premium
+                        </button>
+                    </div>
+
+                    <div id="pricing-card-professional" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+                        <div class="text-center mb-8">
+                            <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fa-solid fa-user-doctor text-purple-600 text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Gói Chuyên Nghiệp</h3>
+                            <p class="text-gray-600 mb-6">Tư vấn từ chuyên gia y tế</p>
+                            <div class="mb-6">
+                                <span class="text-5xl font-bold text-purple-600">599K</span>
+                                <span class="text-gray-600">/tháng</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Tất cả tính năng Premium</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Kết nối không giới hạn thiết bị</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Tư vấn trực tiếp bác sĩ</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Kế hoạch điều trị cá nhân</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Báo cáo y tế chi tiết</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-green"></i>
+                                <span class="text-gray-700">Hỗ trợ 24/7</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-4 bg-purple-600 text-white font-bold rounded-xl hover:bg-purple-700 transition-all">
+                            Chọn gói Chuyên nghiệp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing-comparison-section" class="py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">So sánh chi tiết các gói</h2>
+                    <p class="text-xl text-gray-600">Tìm hiểu đầy đủ về tính năng của từng gói dịch vụ</p>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="text-left p-6 font-bold text-gray-800">Tính năng</th>
+                                <th class="text-center p-6 font-bold text-gray-800">Cơ bản</th>
+                                <th class="text-center p-6 font-bold text-brand-cyan bg-cyan-50">Premium</th>
+                                <th class="text-center p-6 font-bold text-purple-600">Chuyên nghiệp</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t">
+                                <td class="p-6 font-medium text-gray-800">Số chỉ số theo dõi</td>
+                                <td class="p-6 text-center text-gray-600">3 chỉ số</td>
+                                <td class="p-6 text-center text-brand-cyan bg-cyan-50">Không giới hạn</td>
+                                <td class="p-6 text-center text-purple-600">Không giới hạn</td>
+                            </tr>
+                            <tr class="border-t bg-gray-50">
+                                <td class="p-6 font-medium text-gray-800">Kết nối thiết bị</td>
+                                <td class="p-6 text-center text-gray-600">1 thiết bị</td>
+                                <td class="p-6 text-center text-brand-cyan bg-cyan-50">5 thiết bị</td>
+                                <td class="p-6 text-center text-purple-600">Không giới hạn</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-6 font-medium text-gray-800">AI phân tích</td>
+                                <td class="p-6 text-center"><i class="fa-solid fa-xmark text-red-500"></i></td>
+                                <td class="p-6 text-center bg-cyan-50"><i class="fa-solid fa-check text-brand-green"></i></td>
+                                <td class="p-6 text-center"><i class="fa-solid fa-check text-brand-green"></i></td>
+                            </tr>
+                            <tr class="border-t bg-gray-50">
+                                <td class="p-6 font-medium text-gray-800">Tư vấn bác sĩ</td>
+                                <td class="p-6 text-center"><i class="fa-solid fa-xmark text-red-500"></i></td>
+                                <td class="p-6 text-center bg-cyan-50"><i class="fa-solid fa-xmark text-red-500"></i></td>
+                                <td class="p-6 text-center"><i class="fa-solid fa-check text-brand-green"></i></td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-6 font-medium text-gray-800">Báo cáo</td>
+                                <td class="p-6 text-center text-gray-600">Hàng tuần</td>
+                                <td class="p-6 text-center text-brand-cyan bg-cyan-50">Hàng ngày</td>
+                                <td class="p-6 text-center text-purple-600">Thời gian thực</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing-faq-section" class="py-20 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Câu hỏi thường gặp</h2>
+                    <p class="text-xl text-gray-600">Giải đáp những thắc mắc về gói dịch vụ</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div id="faq-1" class="bg-white rounded-2xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Tôi có thể thay đổi gói dịch vụ không?</h3>
+                        <p class="text-gray-600">Có, bạn có thể nâng cấp hoặc hạ cấp gói dịch vụ bất cứ lúc nào. Phí sẽ được tính theo tỷ lệ thời gian sử dụng.</p>
+                    </div>
+                    
+                    <div id="faq-2" class="bg-white rounded-2xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Gói miễn phí có giới hạn thời gian không?</h3>
+                        <p class="text-gray-600">Không, gói cơ bản hoàn toàn miễn phí và không có giới hạn thời gian sử dụng.</p>
+                    </div>
+                    
+                    <div id="faq-3" class="bg-white rounded-2xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Tôi có thể hủy đăng ký không?</h3>
+                        <p class="text-gray-600">Có, bạn có thể hủy đăng ký bất cứ lúc nào mà không mất phí. Dịch vụ sẽ tiếp tục hoạt động đến hết chu kỳ thanh toán.</p>
+                    </div>
+                    
+                    <div id="faq-4" class="bg-white rounded-2xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Dữ liệu của tôi có được bảo mật không?</h3>
+                        <p class="text-gray-600">Tuyệt đối. Chúng tôi tuân thủ tiêu chuẩn bảo mật HIPAA và mã hóa toàn bộ dữ liệu sức khỏe của bạn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing-cta-section" class="py-20 gradient-hero">
+            <div class="max-w-4xl mx-auto px-6 text-center text-white">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Sẵn sàng bắt đầu?</h2>
+                <p class="text-xl mb-10 text-white/90">Chọn gói phù hợp và bắt đầu hành trình chăm sóc sức khỏe thông minh ngay hôm nay</p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <button class="px-10 py-5 bg-white text-brand-cyan font-bold rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+                        Dùng thử miễn phí
+                    </button>
+                    <button class="px-10 py-5 bg-white/20 backdrop-blur-sm text-white font-bold rounded-xl border border-white/30 hover:bg-white/30 transition-all">
+                        Xem demo
+                    </button>
+                </div>
+                <p class="text-white/80 mt-8">Không cần thẻ tín dụng • Hủy bất cứ lúc nào • Hỗ trợ 24/7</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="footer-brand">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-robot text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold">HanaCare</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Ứng dụng chăm sóc sức khỏe thông minh với AI, mang đến trải nghiệm y tế tốt nhất cho mọi người.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="footer-product">
+                    <h3 class="text-lg font-bold mb-6">Sản phẩm</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Tính năng</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bảng giá</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">API</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tích hợp</a></li>
+                    </ul>
+                </div>
+                <div id="footer-company">
+                    <h3 class="text-lg font-bold mb-6">Công ty</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Về chúng tôi</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tin tức</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tuyển dụng</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div id="footer-support">
+                    <h3 class="text-lg font-bold mb-6">Hỗ trợ</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Trung tâm trợ giúp</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Hướng dẫn</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bảo mật</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Điều khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2024 HanaCare. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
