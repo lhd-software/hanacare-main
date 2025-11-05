@@ -3,6 +3,5 @@
 	"devCommand": "cd apps/web && bun run dev",
 	"installCommand": "bun install",
 	"framework": "nextjs",
-	"outputDirectory": "apps/web/.next",
-	"rootDirectory": "apps/web"
+	"outputDirectory": "apps/web/.next"
 }
