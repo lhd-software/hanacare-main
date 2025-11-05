@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "404 - Trang không tìm thấy | HanaCare",
+	description: "Trang bạn tìm kiếm không tồn tại hoặc đã được di chuyển.",
+};
 
 export default function NotFound() {
 	return (

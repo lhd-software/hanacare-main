@@ -1,19 +1,30 @@
 "use client";
 
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 
 interface HeaderProps {
 	activeLink?: string;
 }
 
 export default function Header({ activeLink }: HeaderProps) {
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+		setIsClient(true);
+	}, []);
+
 	return (
 		<header className="bg-white shadow-sm fixed w-full top-0 z-50">
 			<nav className="max-w-7xl mx-auto px-6 py-4">
 				<div className="flex items-center justify-between">
 					<Link href="/" className="flex items-center gap-3">
 						<div className="w-10 h-10 gradient-hero rounded-xl flex items-center justify-center">
-							<i className="fa-solid fa-robot text-white text-xl" aria-hidden="true"></i>
+							{isClient ? (
+								<i className="fa-solid fa-robot text-white text-xl" aria-hidden="true"></i>
+							) : (
+								<span className="text-white text-xl font-bold">H</span>
+							)}
 						</div>
 						<span className="text-2xl font-bold text-gray-800">HanaCare</span>
 					</Link>

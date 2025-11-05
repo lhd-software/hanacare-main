@@ -1,8 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 
 export default function Footer() {
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+		setIsClient(true);
+	}, []);
+
 	return (
 		<footer className="bg-gray-900 text-white py-16">
 			<div className="max-w-7xl mx-auto px-6">
@@ -10,7 +17,11 @@ export default function Footer() {
 					<div>
 						<Link href="/" className="flex items-center gap-3 mb-6">
 							<div className="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center">
-								<i className="fa-solid fa-robot text-white text-xl" aria-hidden="true"></i>
+								{isClient ? (
+									<i className="fa-solid fa-robot text-white text-xl" aria-hidden="true"></i>
+								) : (
+									<span className="text-white text-xl font-bold">H</span>
+								)}
 							</div>
 							<span className="text-2xl font-bold">HanaCare</span>
 						</Link>
@@ -18,24 +29,40 @@ export default function Footer() {
 							Ứng dụng chăm sóc sức khỏe thông minh với AI, mang đến trải nghiệm y tế tốt nhất cho mọi người.
 						</p>
 						<div className="flex gap-4">
-							<a
-								href="#"
-								className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
-							>
-								<i className="fa-brands fa-facebook"></i>
-							</a>
-							<a
-								href="#"
-								className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
-							>
-								<i className="fa-brands fa-instagram"></i>
-							</a>
-							<a
-								href="#"
-								className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
-							>
-								<i className="fa-brands fa-youtube"></i>
-							</a>
+							{isClient ? (
+								<>
+									<a
+										href="#"
+										className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
+									>
+										<i className="fa-brands fa-facebook"></i>
+									</a>
+									<a
+										href="#"
+										className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
+									>
+										<i className="fa-brands fa-instagram"></i>
+									</a>
+									<a
+										href="#"
+										className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-cyan transition-colors"
+									>
+										<i className="fa-brands fa-youtube"></i>
+									</a>
+								</>
+							) : (
+								<>
+									<div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+										<span className="text-white text-xs">f</span>
+									</div>
+									<div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+										<span className="text-white text-xs">i</span>
+									</div>
+									<div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+										<span className="text-white text-xs">y</span>
+									</div>
+								</>
+							)}
 						</div>
 					</div>
 					<div>
