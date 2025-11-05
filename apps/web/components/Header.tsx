@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeaderProps {
 	activeLink?: string;
@@ -13,10 +14,13 @@ export default function Header({ activeLink }: HeaderProps) {
 			<nav className="max-w-7xl mx-auto px-6 py-4">
 				<div className="flex items-center justify-between">
 					<Link href="/" className="flex items-center gap-3">
-						<img
+						<Image
 							src="https://assets.hanacare.vn/images/hanacare-logo-small.jpg"
 							alt="HanaCare Logo"
-							className="w-10 h-10 rounded-xl object-contain"
+							width={40}
+							height={40}
+							className="rounded-xl object-contain"
+							priority
 						/>
 						<span className="text-2xl font-bold text-gray-800">HanaCare</span>
 					</Link>
