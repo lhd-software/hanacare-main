@@ -1,8 +1,7 @@
 {
-	"buildCommand": "bun run build",
-	"devCommand": "bun run dev",
-	"installCommand": "cd ../.. && bun install",
+	"buildCommand": "cd apps/web && bun run build",
+	"devCommand": "cd apps/web && bun run dev",
+	"installCommand": "bun install",
 	"framework": "nextjs",
-	"outputDirectory": ".next",
-	"rootDirectory": "apps/web"
+	"outputDirectory": "apps/web/.next"
 }
