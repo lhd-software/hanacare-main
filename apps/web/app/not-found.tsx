@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function NotFound() {
 	return (
 		<div className="min-h-screen flex items-center justify-center bg-white">
@@ -13,18 +11,18 @@ export default function NotFound() {
 					</p>
 				</div>
 				<div className="flex flex-col sm:flex-row gap-4 justify-center">
-					<Link
+					<a
 						href="/"
 						className="px-8 py-4 gradient-button text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
 					>
 						Về trang chủ
-					</Link>
-					<Link
+					</a>
+					<a
 						href="/contact"
 						className="px-8 py-4 bg-white text-brand-cyan font-bold rounded-xl border-2 border-brand-cyan hover:bg-brand-cyan hover:text-white transition-all"
 					>
 						Liên hệ hỗ trợ
-					</Link>
+					</a>
 				</div>
 			</div>
 		</div>
