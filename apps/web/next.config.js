@@ -15,6 +15,11 @@ const nextConfig = {
 				pathname: "/**",
 			},
 		],
+		domains: [
+			"storage.googleapis.com",
+			"assets.hanacare.vn"
+		],
+		unoptimized: false,
 	},
 };
 
