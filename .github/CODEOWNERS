@@ -1,0 +1,28 @@
+# CODEOWNERS - Team Ownership for Monorepo
+
+# Development Team owns apps and packages
+/apps/                    @dev-team
+/packages/                @dev-team
+
+# QA Team owns features (test scenarios)
+/features/                @qa-team
+
+# Business Analyst Team owns requirements and user stories
+/docs/requirements/       @ba-team
+/docs/user-stories/       @ba-team
+
+# BA + DEV collaborate on specs
+/docs/specs/              @ba-team @dev-team
+
+# Scrum Master/All teams own sprint notes
+/docs/sprint-notes/       @scrum-master
+
+# GitHub workflows
+/.github/workflows/       @dev-team
+
+# Cursor rules
+/.cursor/                 @dev-team
+
+# Note: Replace @dev-team, @qa-team, @ba-team, @scrum-master with actual GitHub usernames or teams
+# Example: /apps/ @john-doe @jane-smith
+
