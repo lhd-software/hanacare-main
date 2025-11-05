@@ -10,6 +10,11 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
 	return (
 		<div className="min-h-screen flex items-center justify-center bg-white">
 			<div className="max-w-2xl mx-auto px-6 text-center">
+				<img
+					src="https://assets.hanacare.vn/images/hanacare-logo-small.jpg"
+					alt="HanaCare Logo"
+					className="w-20 h-20 mx-auto mb-6 rounded-xl object-contain"
+				/>
 				<h1 className="text-4xl font-bold text-gray-800 mb-4">Something went wrong</h1>
 				<p className="text-xl text-gray-600 mb-8">
 					An error occurred. Please try again.
