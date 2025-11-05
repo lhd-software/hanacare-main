@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
-import FontAwesomeHead from "@/components/FontAwesomeHead";
 
 export const metadata: Metadata = {
 	title: "HanaCare - Super App",
@@ -15,7 +14,6 @@ export default function RootLayout({
 	return (
 		<html lang="vi">
 			<body className="bg-white">
-				<FontAwesomeHead />
 				{children}
 			</body>
 		</html>
