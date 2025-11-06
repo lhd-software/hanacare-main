@@ -93,7 +93,7 @@ export default function FeaturesPage() {
 							<div className="flex justify-center">
 								<div className="relative">
 									<Image
-										src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1966ddcb4f-879b075cf4c109a6060f.png"
+										src="https://img.hanacare.vn/large/1966ddcb4f-879b075cf4c109a6060f.png"
 										alt="futuristic AI brain interface with health data visualization"
 										width={384}
 										height={384}

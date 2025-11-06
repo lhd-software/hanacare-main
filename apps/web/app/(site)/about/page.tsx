@@ -8,6 +8,26 @@ export const metadata: Metadata = {
 	description: "Tìm hiểu về HanaCare và sứ mệnh của chúng tôi",
 };
 
+// Avatar fallback component
+function AvatarWithFallback({ src, alt, initials, className }: { src: string; alt: string; initials: string; className?: string }) {
+	return (
+		<div className="w-32 h-32 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg bg-gray-200 flex items-center justify-center relative">
+			<Image
+				src={src}
+				alt={alt}
+				width={128}
+				height={128}
+				className="w-full h-full object-cover"
+				onError={(e) => {
+					const target = e.target as HTMLImageElement;
+					target.style.display = 'none';
+				}}
+			/>
+			<span className="text-gray-500 text-2xl font-bold absolute">{initials}</span>
+		</div>
+	);
+}
+
 export default function AboutPage() {
 	return (
 		<>
@@ -59,7 +79,7 @@ export default function AboutPage() {
 							<div className="flex justify-center">
 								<div className="w-96 h-96 overflow-hidden rounded-3xl shadow-2xl">
 									<Image
-										src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b60e5fd2c-368e79ef7aeb91aae099.png"
+										src="https://img.hanacare.vn/small/4b60e5fd2c-368e79ef7aeb91aae099.png"
 										alt="modern healthcare technology office with AI screens, medical devices, team working on health innovation, bright and professional atmosphere"
 										width={384}
 										height={384}
@@ -125,57 +145,41 @@ export default function AboutPage() {
 						</div>
 						<div className="grid md:grid-cols-4 gap-8">
 							<div className="text-center">
-								<div className="w-32 h-32 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg">
-									<Image
-										src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
-										alt="CEO"
-										width={128}
-										height={128}
-										className="w-full h-full object-cover"
-									/>
-								</div>
+								<AvatarWithFallback
+									src="https://img.hanacare.vn/small/avatar-2.jpg"
+									alt="CEO"
+									initials="ND"
+								/>
 								<h3 className="text-xl font-bold text-gray-800 mb-2">Nguyễn Minh Đức</h3>
 								<p className="text-brand-cyan font-semibold mb-2">CEO & Founder</p>
 								<p className="text-gray-600 text-sm">15 năm kinh nghiệm trong lĩnh vực công nghệ y tế</p>
 							</div>
 							<div className="text-center">
-								<div className="w-32 h-32 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg">
-									<Image
-										src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
-										alt="CTO"
-										width={128}
-										height={128}
-										className="w-full h-full object-cover"
-									/>
-								</div>
+								<AvatarWithFallback
+									src="https://img.hanacare.vn/small/avatar-1.jpg"
+									alt="CTO"
+									initials="TL"
+								/>
 								<h3 className="text-xl font-bold text-gray-800 mb-2">Trần Thị Lan</h3>
 								<p className="text-brand-cyan font-semibold mb-2">CTO</p>
 								<p className="text-gray-600 text-sm">Chuyên gia AI với hơn 12 năm kinh nghiệm</p>
 							</div>
 							<div className="text-center">
-								<div className="w-32 h-32 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg">
-									<Image
-										src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
-										alt="Head of Medical"
-										width={128}
-										height={128}
-										className="w-full h-full object-cover"
-									/>
-								</div>
+								<AvatarWithFallback
+									src="https://img.hanacare.vn/small/avatar-3.jpg"
+									alt="Head of Medical"
+									initials="LH"
+								/>
 								<h3 className="text-xl font-bold text-gray-800 mb-2">Lê Văn Hùng</h3>
 								<p className="text-brand-cyan font-semibold mb-2">Head of Medical</p>
 								<p className="text-gray-600 text-sm">Bác sĩ tim mạch với 20 năm kinh nghiệm lâm sàng</p>
 							</div>
 							<div className="text-center">
-								<div className="w-32 h-32 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg">
-									<Image
-										src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
-										alt="Head of Design"
-										width={128}
-										height={128}
-										className="w-full h-full object-cover"
-									/>
-								</div>
+								<AvatarWithFallback
+									src="https://img.hanacare.vn/small/avatar-5.jpg"
+									alt="Head of Design"
+									initials="PM"
+								/>
 								<h3 className="text-xl font-bold text-gray-800 mb-2">Phạm Thị Mai</h3>
 								<p className="text-brand-cyan font-semibold mb-2">Head of Design</p>
 								<p className="text-gray-600 text-sm">Chuyên gia UX/UI với 10 năm kinh nghiệm</p>

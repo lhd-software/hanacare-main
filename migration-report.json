@@ -1,0 +1,163 @@
+{
+  "timestamp": "2025-11-06T07:19:59.931Z",
+  "summary": {
+    "totalImages": 25,
+    "totalSize": 9128101,
+    "hanacareImages": 7,
+    "uiuxImages": 18
+  },
+  "hanacareImages": [
+    {
+      "key": "hanacare-images/2025/11/1762413279864-3mihup.jpg",
+      "size": 11788,
+      "lastModified": "2025-11-06T07:14:43.293Z",
+      "url": "https://pub-web.r2.dev/hanacare-images/2025/11/1762413279864-3mihup.jpg"
+    },
+    {
+      "key": "hanacare-images/2025/11/1762413280212-e8cu8i.jpg",
+      "size": 100407,
+      "lastModified": "2025-11-06T07:14:43.729Z",
+      "url": "https://pub-web.r2.dev/hanacare-images/2025/11/1762413280212-e8cu8i.jpg"
+    },
+    {
+      "key": "hanacare-images/2025/11/1762413281665-v84ak.png",
+      "size": 1247978,
+      "lastModified": "2025-11-06T07:14:46.060Z",
+      "url": "https://pub-web.r2.dev/hanacare-images/2025/11/1762413281665-v84ak.png"
+    },
+    {
+      "key": "hanacare-images/2025/11/1762413281756-aufz5.jpg",
+      "size": 143485,
+      "lastModified": "2025-11-06T07:14:46.496Z",
+      "url": "https://pub-web.r2.dev/hanacare-images/2025/11/1762413281756-aufz5.jpg"
+    },
+    {
+      "key": "hanacare-images/2025/11/1762413281813-127htt.jpg",
+      "size": 86487,
+      "lastModified": "2025-11-06T07:14:47.005Z",
+      "url": "https://pub-web.r2.dev/hanacare-images/2025/11/1762413281813-127htt.jpg"
+    },
+    {
+      "key": "hanacare-images/2025/11/1762413281907-sqzisd.jpg",
+      "size": 192918,
+      "lastModified": "2025-11-06T07:14:47.687Z",
+      "url": "https://pub-web.r2.dev/hanacare-images/2025/11/1762413281907-sqzisd.jpg"
+    },
+    {
+      "key": "hanacare-images/2025/11/1762413282786-s7c0bb.png",
+      "size": 976530,
+      "lastModified": "2025-11-06T07:14:49.329Z",
+      "url": "https://pub-web.r2.dev/hanacare-images/2025/11/1762413282786-s7c0bb.png"
+    }
+  ],
+  "uiuxImages": [
+    {
+      "key": "hanacare-uiux/2025/11/1966ddcb4f-879b075cf4c109a6060f-1762413559386-n2juf.png",
+      "size": 976530,
+      "lastModified": "2025-11-06T07:19:31.269Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/1966ddcb4f-879b075cf4c109a6060f-1762413559386-n2juf.png"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/1966ddcb4f-879b075cf4c109a6060f-1762413559602-yewk38.png",
+      "size": 976530,
+      "lastModified": "2025-11-06T07:19:33.191Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/1966ddcb4f-879b075cf4c109a6060f-1762413559602-yewk38.png"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/4b60e5fd2c-368e79ef7aeb91aae099-1762413556669-shc1s9.png",
+      "size": 1247978,
+      "lastModified": "2025-11-06T07:19:22.135Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/4b60e5fd2c-368e79ef7aeb91aae099-1762413556669-shc1s9.png"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/4b60e5fd2c-368e79ef7aeb91aae099-1762413557459-j7n01e.png",
+      "size": 1247978,
+      "lastModified": "2025-11-06T07:19:25.835Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/4b60e5fd2c-368e79ef7aeb91aae099-1762413557459-j7n01e.png"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-1-1762413556865-xmockt.jpg",
+      "size": 100407,
+      "lastModified": "2025-11-06T07:19:22.898Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-1-1762413556865-xmockt.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-1-1762413557601-orl5ag.jpg",
+      "size": 100407,
+      "lastModified": "2025-11-06T07:19:26.566Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-1-1762413557601-orl5ag.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-2-1762413556765-yk10cg.jpg",
+      "size": 143485,
+      "lastModified": "2025-11-06T07:19:22.560Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-2-1762413556765-yk10cg.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-2-1762413557548-whhtdk.jpg",
+      "size": 143485,
+      "lastModified": "2025-11-06T07:19:26.241Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-2-1762413557548-whhtdk.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-3-1762413557238-759ef.jpg",
+      "size": 86487,
+      "lastModified": "2025-11-06T07:19:23.215Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-3-1762413557238-759ef.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-3-1762413557691-0ul1ig.jpg",
+      "size": 86487,
+      "lastModified": "2025-11-06T07:19:26.952Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-3-1762413557691-0ul1ig.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-5-1762413557331-0cfef8.jpg",
+      "size": 192918,
+      "lastModified": "2025-11-06T07:19:23.780Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-5-1762413557331-0cfef8.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-5-1762413557787-57dch.jpg",
+      "size": 192918,
+      "lastModified": "2025-11-06T07:19:27.532Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-5-1762413557787-57dch.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-6-1762413558709-jts7p.jpg",
+      "size": 198626,
+      "lastModified": "2025-11-06T07:19:28.639Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-6-1762413558709-jts7p.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-6-1762413558891-hjrv3.jpg",
+      "size": 198626,
+      "lastModified": "2025-11-06T07:19:29.711Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-6-1762413558891-hjrv3.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-8-1762413558320-l2l1xm.jpg",
+      "size": 226035,
+      "lastModified": "2025-11-06T07:19:28.138Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-8-1762413558320-l2l1xm.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/avatar-8-1762413558800-4a8bj.jpg",
+      "size": 226035,
+      "lastModified": "2025-11-06T07:19:29.186Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/avatar-8-1762413558800-4a8bj.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/hanacare-logo-small-1762413559793-nz4bn6.jpg",
+      "size": 11788,
+      "lastModified": "2025-11-06T07:19:33.477Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/hanacare-logo-small-1762413559793-nz4bn6.jpg"
+    },
+    {
+      "key": "hanacare-uiux/2025/11/hanacare-logo-small-1762413559858-c7gdg.jpg",
+      "size": 11788,
+      "lastModified": "2025-11-06T07:19:33.825Z",
+      "url": "https://pub-web.r2.dev/hanacare-uiux/2025/11/hanacare-logo-small-1762413559858-c7gdg.jpg"
+    }
+  ]
+}

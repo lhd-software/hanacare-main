@@ -5,7 +5,7 @@ export default function NotFound() {
 		<div className="min-h-screen flex items-center justify-center bg-white">
 			<div className="max-w-2xl mx-auto px-6 text-center">
 				<Image
-					src="https://assets.hanacare.vn/images/hanacare-logo-small.jpg"
+					src="https://img.hanacare.vn/medium/hanacare-logo-small.jpg"
 					alt="HanaCare Logo"
 					width={80}
 					height={80}

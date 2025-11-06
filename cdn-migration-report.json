@@ -1,0 +1,135 @@
+{
+  "timestamp": "2025-11-06T07:29:31.077Z",
+  "summary": {
+    "totalImages": 9,
+    "totalSize": 3184254,
+    "baseDomain": "https://img.hanacare.vn"
+  },
+  "urlPatterns": {
+    "original": "https://storage.googleapis.com/uxpilot-.../image.jpg",
+    "small": "https://img.hanacare.vn/small/image.jpg",
+    "medium": "https://img.hanacare.vn/medium/image.jpg",
+    "large": "https://img.hanacare.vn/large/image.jpg"
+  },
+  "mappings": [
+    {
+      "original": "https://storage.googleapis.com/uxpilot-auth.appspot.com/4b60e5fd2c-368e79ef7aeb91aae099.png",
+      "filename": "4b60e5fd2c-368e79ef7aeb91aae099.png",
+      "size": "1219KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/4b60e5fd2c-368e79ef7aeb91aae099.png",
+        "small": "https://img.hanacare.vn/small/4b60e5fd2c-368e79ef7aeb91aae099.png",
+        "medium": "https://img.hanacare.vn/medium/4b60e5fd2c-368e79ef7aeb91aae099.png",
+        "large": "https://img.hanacare.vn/large/4b60e5fd2c-368e79ef7aeb91aae099.png"
+      }
+    },
+    {
+      "original": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
+      "filename": "avatar-2.jpg",
+      "size": "140KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/avatar-2.jpg",
+        "small": "https://img.hanacare.vn/small/avatar-2.jpg",
+        "medium": "https://img.hanacare.vn/medium/avatar-2.jpg",
+        "large": "https://img.hanacare.vn/large/avatar-2.jpg"
+      }
+    },
+    {
+      "original": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg",
+      "filename": "avatar-1.jpg",
+      "size": "98KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/avatar-1.jpg",
+        "small": "https://img.hanacare.vn/small/avatar-1.jpg",
+        "medium": "https://img.hanacare.vn/medium/avatar-1.jpg",
+        "large": "https://img.hanacare.vn/large/avatar-1.jpg"
+      }
+    },
+    {
+      "original": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg",
+      "filename": "avatar-3.jpg",
+      "size": "84KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/avatar-3.jpg",
+        "small": "https://img.hanacare.vn/small/avatar-3.jpg",
+        "medium": "https://img.hanacare.vn/medium/avatar-3.jpg",
+        "large": "https://img.hanacare.vn/large/avatar-3.jpg"
+      }
+    },
+    {
+      "original": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
+      "filename": "avatar-5.jpg",
+      "size": "188KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/avatar-5.jpg",
+        "small": "https://img.hanacare.vn/small/avatar-5.jpg",
+        "medium": "https://img.hanacare.vn/medium/avatar-5.jpg",
+        "large": "https://img.hanacare.vn/large/avatar-5.jpg"
+      }
+    },
+    {
+      "original": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg",
+      "filename": "avatar-8.jpg",
+      "size": "221KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/avatar-8.jpg",
+        "small": "https://img.hanacare.vn/small/avatar-8.jpg",
+        "medium": "https://img.hanacare.vn/medium/avatar-8.jpg",
+        "large": "https://img.hanacare.vn/large/avatar-8.jpg"
+      }
+    },
+    {
+      "original": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg",
+      "filename": "avatar-6.jpg",
+      "size": "194KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/avatar-6.jpg",
+        "small": "https://img.hanacare.vn/small/avatar-6.jpg",
+        "medium": "https://img.hanacare.vn/medium/avatar-6.jpg",
+        "large": "https://img.hanacare.vn/large/avatar-6.jpg"
+      }
+    },
+    {
+      "original": "https://storage.googleapis.com/uxpilot-auth.appspot.com/1966ddcb4f-879b075cf4c109a6060f.png",
+      "filename": "1966ddcb4f-879b075cf4c109a6060f.png",
+      "size": "954KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/1966ddcb4f-879b075cf4c109a6060f.png",
+        "small": "https://img.hanacare.vn/small/1966ddcb4f-879b075cf4c109a6060f.png",
+        "medium": "https://img.hanacare.vn/medium/1966ddcb4f-879b075cf4c109a6060f.png",
+        "large": "https://img.hanacare.vn/large/1966ddcb4f-879b075cf4c109a6060f.png"
+      }
+    },
+    {
+      "original": "https://assets.hanacare.vn/images/hanacare-logo-small.jpg",
+      "filename": "hanacare-logo-small.jpg",
+      "size": "12KB",
+      "cdnUrls": {
+        "original": "https://img.hanacare.vn/hanacare-logo-small.jpg",
+        "small": "https://img.hanacare.vn/small/hanacare-logo-small.jpg",
+        "medium": "https://img.hanacare.vn/medium/hanacare-logo-small.jpg",
+        "large": "https://img.hanacare.vn/large/hanacare-logo-small.jpg"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "old": "https://storage.googleapis.com/uxpilot-auth.appspot.com/4b60e5fd2c-368e79ef7aeb91aae099.png",
+      "newSmall": "https://img.hanacare.vn/small/4b60e5fd2c-368e79ef7aeb91aae099.png",
+      "newMedium": "https://img.hanacare.vn/medium/4b60e5fd2c-368e79ef7aeb91aae099.png",
+      "newLarge": "https://img.hanacare.vn/large/4b60e5fd2c-368e79ef7aeb91aae099.png"
+    },
+    {
+      "old": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
+      "newSmall": "https://img.hanacare.vn/small/avatar-2.jpg",
+      "newMedium": "https://img.hanacare.vn/medium/avatar-2.jpg",
+      "newLarge": "https://img.hanacare.vn/large/avatar-2.jpg"
+    },
+    {
+      "old": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg",
+      "newSmall": "https://img.hanacare.vn/small/avatar-1.jpg",
+      "newMedium": "https://img.hanacare.vn/medium/avatar-1.jpg",
+      "newLarge": "https://img.hanacare.vn/large/avatar-1.jpg"
+    }
+  ]
+}

@@ -65,7 +65,7 @@ export default function Home() {
 										<div className="flex justify-between items-center mb-5">
 											<div className="flex items-center gap-3">
 												<Image
-													src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
+													src="https://img.hanacare.vn/small/avatar-1.jpg"
 													alt="User Avatar"
 													width={44}
 													height={44}

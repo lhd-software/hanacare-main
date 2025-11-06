@@ -15,14 +15,25 @@
 		"format": "biome format --write .",
 		"typecheck": "bun run --filter=* typecheck",
 		"test": "bun run --filter=* test",
-		"clean": "bun run --filter=* clean && rm -rf node_modules"
+		"clean": "bun run --filter=* clean && rm -rf node_modules",
+		"migrate-images": "bun run scripts/migrate-images.ts",
+		"migrate-uiux-images": "bun run scripts/migrate-images-uiux.ts",
+		"migrate-to-cdn": "bun run scripts/migrate-to-cdn.ts",
+		"replace-image-urls": "bun run scripts/replace-image-urls.ts",
+		"replace-image-urls:apply": "bun run scripts/replace-image-urls.ts --apply",
+		"check-migration": "bun run scripts/check-migration-results.ts",
+		"test-migration-config": "bun run scripts/test-config.ts"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
 		"typescript": "^5.7.3"
 	},
 	"dependencies": {
-		"@supabase/supabase-js": "^2.47.10"
+		"@aws-sdk/client-s3": "^3.925.0",
+		"@supabase/supabase-js": "^2.47.10",
+		"dotenv": "^17.2.3",
+		"glob": "^11.0.3",
+		"sharp": "^0.34.4"
 	},
 	"engines": {
 		"bun": ">=1.3.1"

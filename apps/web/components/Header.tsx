@@ -15,7 +15,7 @@ export default function Header({ activeLink }: HeaderProps) {
 				<div className="flex items-center justify-between">
 					<Link href="/" className="flex items-center gap-3">
 						<Image
-							src="https://assets.hanacare.vn/images/hanacare-logo-small.jpg"
+							src="https://img.hanacare.vn/medium/hanacare-logo-small.jpg"
 							alt="HanaCare Logo"
 							width={40}
 							height={40}

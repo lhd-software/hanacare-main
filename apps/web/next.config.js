@@ -14,10 +14,16 @@ const nextConfig = {
 				hostname: "assets.hanacare.vn",
 				pathname: "/**",
 			},
+			{
+				protocol: "https",
+				hostname: "img.hanacare.vn",
+				pathname: "/**",
+			},
 		],
 		domains: [
 			"storage.googleapis.com",
-			"assets.hanacare.vn"
+			"assets.hanacare.vn",
+			"img.hanacare.vn"
 		],
 		unoptimized: false,
 	},

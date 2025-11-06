@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@/components/fontawesome';
-import { faRobot } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
@@ -19,13 +19,19 @@ export default function Footer() {
 				<div className="grid md:grid-cols-4 gap-8">
 					<div>
 						<Link href="/" className="flex items-center gap-3 mb-6">
-							<div className="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center">
-								{isClient ? (
-									<FontAwesomeIcon icon={faRobot} className="text-white text-xl" />
-								) : (
+							{isClient ? (
+								<Image
+									src="https://img.hanacare.vn/medium/hanacare-logo-small.jpg"
+									alt="HanaCare Logo"
+									width={48}
+									height={48}
+									className="rounded-xl object-contain"
+								/>
+							) : (
+								<div className="w-12 h-12 gradient-hero rounded-xl flex items-center justify-center">
 									<span className="text-white text-xl font-bold">H</span>
-								)}
-							</div>
+								</div>
+							)}
 							<span className="text-2xl font-bold">HanaCare</span>
 						</Link>
 						<p className="text-gray-400 mb-6">
